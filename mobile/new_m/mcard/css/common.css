@@ -1,7 +1,7 @@
 /* common.css´Â ¸ð¹ÙÀÏ Ã»Ã¸Àå °øÅë¿µ¿ª Á¤ÀÇÇÕ´Ï´Ù. */
 html{-webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none; font-size:4.445vmin;}
 html, body{width:100%; height:100%;}
-body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repeat-y; background-size:100% auto;}
+body{background:url("/mcard/mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repeat-y; background-size:100% auto;}
 
 #menu-overlay{display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000; opacity:.7; z-index:998;}
 
@@ -26,7 +26,7 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 .messageDelete .buttons:after{content:''; display:block; clear:both;}
 .messageDelete .buttons .btn{display:block; float:left; width:50%; background:#fff; font-family:"Noto Sans KR"; font-size:1rem; font-weight:400; line-height:3.125rem; text-align:center; color:#111; border-top:1px solid #eee; border-left:1px solid #eee;text-decoration:none;}
 .messageDelete .buttons .btn:first-child{border-left:0;}
-.messageDelete .close-btn{position:absolute; right:0; top:0; display:block; width:3.375rem; height:3.125rem; background:url("./mobile/new_m/mcard/images/common/message_delete_02.png") 50% 50% no-repeat; background-size:0.875rem; font-size:0; line-height:0;}
+.messageDelete .close-btn{position:absolute; right:0; top:0; display:block; width:3.375rem; height:3.125rem; background:url("/mcard/mobile/new_m/mcard/images/common/message_delete_02.png") 50% 50% no-repeat; background-size:0.875rem; font-size:0; line-height:0;}
 
 .accountCopy .pop-head{font-family:"Noto Sans KR"; font-size:1.125rem; font-weight:400; line-height:3.125rem;text-align:center; color:#111; border-bottom:1px solid #5b1eaa;}
 .accountCopy .pop-body{padding:0 0 2.5rem;}
@@ -38,7 +38,7 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 .accountCopy .form .group:after {content: '';display: block;clear: both;}
 .accountCopy .form .input{font-family: 'Noto Sans KR';font-size: 1rem;width: 77%;height: 2.5rem;border: 1px solid #eee;background: #f9f9f9;padding-left: 0.875rem;}
 .accountCopy .form .btn{background: #5b1eaa;color: #fff;height: 2.5rem;width: 3.75rem;font-size: 0.813rem;font-family: 'Noto Sans KR';}
-.accountCopy .close-btn{position:absolute; right:0; top:0; display:block; width:3.375rem; height:3.125rem; background:url("./mobile/new_m/mcard/images/common/message_delete_02.png") 50% 50% no-repeat; background-size:0.875rem; font-size:0; line-height:0;}
+.accountCopy .close-btn{position:absolute; right:0; top:0; display:block; width:3.375rem; height:3.125rem; background:url("/mcard/mobile/new_m/mcard/images/common/message_delete_02.png") 50% 50% no-repeat; background-size:0.875rem; font-size:0; line-height:0;}
 
 .copyComplete .pop-body{padding:0 0 2.5rem;}
 .copyComplete .form .group{padding:2.5rem 2rem;text-align:center;}
@@ -200,7 +200,7 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 }
 
 .banner-section{
-	background:url('/mobile/new_m/mcard/images/mcard_29/banner_01.jpg') center center no-repeat;
+	background:url('/mcard/mobile/new_m/mcard/images/mcard_29/banner_01.jpg') center center no-repeat;
 	background-size:100% auto;
 }
 .banner-section .txt{
@@ -260,11 +260,11 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 }
 .com-btn:first-child{margin-left:0;}
 .com-btn.tel{
-	background-image:url("./mobile/new_m/mcard/images/common/icon_tel.png");
+	background-image:url("/mcard/mobile/new_m/mcard/images/common/icon_tel.png");
 	background-size:1rem auto;
 }
 .com-btn.sms{
-	background-image:url("./mobile/new_m/mcard/images/common/icon_sms.png");
+	background-image:url("/mcard/mobile/new_m/mcard/images/common/icon_sms.png");
 	background-size:1rem auto;
 }
 .com-btn.acc{
@@ -573,7 +573,7 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 	display:block;
 	width: 3.375rem;
 	height:3.188rem;
-	background: url("./mobile/new_m/mcard/images/common/gallery_close.png") 50% 50% no-repeat;
+	background: url("/mcard/mobile/new_m/mcard/images/common/gallery_close.png") 50% 50% no-repeat;
 	background-size:0.875rem auto;
 	font-size: 0;
 	line-height: 0;
@@ -745,7 +745,7 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 	display:block;
 	width:2.250rem;
 	height:2.250rem;
-	background:#333 url("./mobile/new_m/mcard/images/common/icon_tel.png") 50% 50% no-repeat;
+	background:#333 url("/mcard/mobile/new_m/mcard/images/common/icon_tel.png") 50% 50% no-repeat;
 	background-size:1rem;
 	font-size:0;
 	line-height:0;
@@ -794,16 +794,16 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 	background-size:3.125rem;
 }
 .location-section .link .tmap:after{
-	background-image: url("./mobile/new_m/mcard/images/common/location_tmap.png");
+	background-image: url("/mcard/mobile/new_m/mcard/images/common/location_tmap.png");
 }
 .location-section .link .kakaonavi:after{
-	background-image: url("./mobile/new_m/mcard/images/common/location_kakaonavi.png");
+	background-image: url("/mcard/mobile/new_m/mcard/images/common/location_kakaonavi.png");
 }
 .location-section .link .navermap:after{
-	background-image: url("./mobile/new_m/mcard/images/common/location_navermap.png");
+	background-image: url("/mcard/mobile/new_m/mcard/images/common/location_navermap.png");
 }
 .location-section .link .kakaomap:after{
-	background-image: url("./mobile/new_m/mcard/images/common/location_kakaomap.png");
+	background-image: url("/mcard/mobile/new_m/mcard/images/common/location_kakaomap.png");
 }
 .location-section .info{
 	padding-top: 0.625rem;
@@ -993,7 +993,7 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 	right:0; top:0.750rem;
 	width:1.250rem;
 	height:1.250rem;
-	background:#111 url("./mobile/new_m/mcard/images/common/message_delete.png") 50% 50% no-repeat;
+	background:#111 url("/mcard/mobile/new_m/mcard/images/common/message_delete.png") 50% 50% no-repeat;
 	background-size:0.5rem;
 	font-size: 0;
 	line-height: 0;
@@ -1041,13 +1041,13 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 	background-size:3.125rem;
 }
 .foot-share .kakao:after{
-	background-image:url("./mobile/new_m/mcard/images/common/footer_kakao.png");
+	background-image:url("/mcard/mobile/new_m/mcard/images/common/footer_kakao.png");
 }
 .foot-share .facebook:after{
-	background-image:url("./mobile/new_m/mcard/images/common/footer_facebook.png");
+	background-image:url("/mcard/mobile/new_m/mcard/images/common/footer_facebook.png");
 }
 .foot-share .Phone_2g:after{
-	background-image:url("./mobile/new_m/mcard/images/common/footer_2g.png");
+	background-image:url("/mcard/mobile/new_m/mcard/images/common/footer_2g.png");
 }
 .foot-logo{
 	display:-webkit-box; 
@@ -1070,7 +1070,7 @@ body{background:url("./mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 repea
 	width:3.469rem;
 	height:0.906rem;
 	margin:0 auto;
-	background:url("./mobile/new_m/mcard/images/common/footer_logo.png") 0 0 no-repeat;
+	background:url("/mcard/mobile/new_m/mcard/images/common/footer_logo.png") 0 0 no-repeat;
 	background-size:3.469rem auto;
 }
 
