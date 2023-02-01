@@ -40,7 +40,7 @@
 }
 .mcard_29 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_29/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_29/wedding_day.png") center bottom 1px no-repeat;
 	background-size:7.750rem auto;
 }
 
@@ -114,7 +114,7 @@
 
 /* ********************* 2번 템플릿 ********************* */
 .mcard_30 {
-	background:url("/mobile/new_m/mcard/images/mcard_30/bg.jpg") 0 0 repeat-y!important;
+	background:url("./mobile/new_m/mcard/images/mcard_30/bg.jpg") 0 0 repeat-y!important;
 	background-size:100% auto;
 }
 .mcard_30 .sec-tit{
@@ -333,7 +333,7 @@
 	line-height:0.938rem;
 	color:#7c6a52;
 	padding-bottom:1.250rem;
-	background:url("/mobile/new_m/mcard/images/mcard_31/bar_01.png") center bottom 0.375rem no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_31/bar_01.png") center bottom 0.375rem no-repeat;
 	background-size:0.438rem auto;
 	white-space:nowrap;
 }
@@ -477,7 +477,7 @@
 
 .mcard_32 .visual-section{
 	padding-bottom:5rem;
-	background:url("/mobile/new_m/mcard/images/mcard_32/visual_02.png") right bottom no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_32/visual_02.png") right bottom no-repeat;
 	background-size:calc(100% - 2.250rem) auto;
 }
 .mcard_32 .visual-section .vertical-item{
@@ -492,7 +492,7 @@
 	font-size:1rem;
 	font-weight:400;
 	color:#111;
-	background:url("/mobile/new_m/mcard/images/mcard_32/wedding_day.png") center top 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_32/wedding_day.png") center top 1px no-repeat;
 	background-size:5.5rem auto;
 }
 .mcard_32 .visual-section .vertical-item.photo img{
@@ -503,7 +503,7 @@
 }
 .mcard_32 .visual-section .vertical-item.info .p1{
 	padding-bottom:2.969rem;
-	background:url("/mobile/new_m/mcard/images/mcard_32/bul_01.png") center bottom 1rem no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_32/bul_01.png") center bottom 1rem no-repeat;
 	background-size:1.531rem auto;
 	font-size:1.125rem;
 	font-weight:400;
@@ -564,7 +564,7 @@
 
 .mcard_32 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_32/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_32/wedding_day.png") center bottom 1px no-repeat;
 	background-size:5.5rem auto;
 }
 
@@ -661,7 +661,7 @@
 	left:0; top:0;
 	right:0; bottom:0;
 	display:block;
-	background:url("/mobile/new_m/mcard/images/mcard_33/visual_02.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_33/visual_02.png") 0 0 no-repeat;
 	background-size:100% auto;
 }
 .mcard_33 .visual-section .vertical-item.photo img{
@@ -792,7 +792,7 @@
 	left:0; top:0;
 	right:0; bottom:0;
 	display:block;
-	background:url("/mobile/new_m/mcard/images/mcard_34/visual_02.png") left bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_34/visual_02.png") left bottom 1px no-repeat;
 	background-size:100% auto;
 }
 .mcard_34 .visual-section .vertical-item.info{
@@ -863,7 +863,7 @@
 }
 .mcard_34 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_34/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_34/wedding_day.png") center bottom 1px no-repeat;
 	background-size:5.5rem auto;
 }
 
@@ -879,7 +879,7 @@
 	line-height:1.1;
 	color:#000;
 	text-align:center;
-	background:url("/mobile/new_m/mcard/images/mcard_35/sub_title_deco.png") center top 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_35/sub_title_deco.png") center top 1px no-repeat;
 	background-size:1.844rem auto;
 	letter-spacing:0.025em;
 }
@@ -920,7 +920,7 @@
 	display:block;
 	width:7.375rem;
 	height:8.375rem;
-	background:url("/mobile/new_m/mcard/images/mcard_35/visual_01.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_35/visual_01.png") 0 0 no-repeat;
 	background-size:100% auto;
 }
 .mcard_35 .visual-section .vertical-item.name:before{
@@ -930,7 +930,7 @@
 	display:block;
 	width:5.969rem;
 	height:8.781rem;
-	background:url("/mobile/new_m/mcard/images/mcard_35/visual_02.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_35/visual_02.png") 0 0 no-repeat;
 	background-size:100% auto;
 }
 .mcard_35 .visual-section .vertical-item.name .name{
@@ -951,7 +951,7 @@
 .mcard_35 .visual-section .vertical-item.info{
 	margin-top:6.250rem;
 	padding-top:3.438rem;
-	background:url("/mobile/new_m/mcard/images/mcard_35/visual_03.png") center top 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_35/visual_03.png") center top 1px no-repeat;
 	background-size:2.375rem auto;
 	letter-spacing:0.05em;
 }
@@ -1086,7 +1086,7 @@
 .mcard_36 .visual-section .vertical-top{
 	position:relative;
 	padding-top:145.85%;
-	background:url("/mobile/new_m/mcard/images/mcard_36/visual_01_01.jpg") 0 0 no-repeat, url("/mobile/new_m/mcard/images/mcard_36/visual_01_03.jpg") top left repeat-y;
+	background:url("./mobile/new_m/mcard/images/mcard_36/visual_01_01.jpg") 0 0 no-repeat, url("./mobile/new_m/mcard/images/mcard_36/visual_01_03.jpg") top left repeat-y;
 	background-size:100% auto;
 }
 .mcard_36 .visual-section .vertical-item{
@@ -1105,7 +1105,7 @@
 .mcard_36 .visual-section .vertical-item.info{
 	position:relative;
 	min-height:7.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_36/visual_01_02.jpg") bottom left no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_36/visual_01_02.jpg") bottom left no-repeat;
 	background-size:100% auto;
 }
 .mcard_36 .visual-section .vertical-item.info .p1{
@@ -1126,7 +1126,7 @@
 	width:1.469rem;
 	height:1rem;
 	margin:0 0.625rem;
-	background:url("/mobile/new_m/mcard/images/mcard_36/visual_03.png") center center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_36/visual_03.png") center center no-repeat;
 	background-size:1.469rem auto;
 }
 .mcard_36 .visual-section .vertical-item.info .p2{
@@ -1383,7 +1383,7 @@
 }
 .mcard_38 .visual-section .vertical-item.photo{
 	padding:1.188rem 0;
-	background:url("/mobile/new_m/mcard/images/mcard_38/visual_01_01.png") top 1px center no-repeat, url("/mobile/new_m/mcard/images/mcard_38/visual_01_02.png") bottom 1px center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_38/visual_01_01.png") top 1px center no-repeat, url("./mobile/new_m/mcard/images/mcard_38/visual_01_02.png") bottom 1px center no-repeat;
 	background-size:18.000rem auto;
 }
 .mcard_38 .visual-section .vertical-item.photo img{
@@ -1413,7 +1413,7 @@
 	width:1.781rem;
 	height:1.125rem;
 	font-size:0;
-	background:url("/mobile/new_m/mcard/images/mcard_38/visual_02.png") center center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_38/visual_02.png") center center no-repeat;
 	background-size:1.781rem auto;
 }
 .mcard_38 .visual-section .vertical-item.info .p2{
@@ -1459,7 +1459,7 @@
 
 .mcard_38 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_38/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_38/wedding_day.png") center bottom 1px no-repeat;
 	background-size:7.750rem auto;
 }
 .mcard_38 .location-section .head .tel{
@@ -1585,7 +1585,7 @@
 
 .mcard_39 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_39/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_39/wedding_day.png") center bottom 1px no-repeat;
 	background-size:7.750rem auto;
 }
 .mcard_39 .message-section{
@@ -1855,7 +1855,7 @@
 
 .mcard_41 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_41/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_41/wedding_day.png") center bottom 1px no-repeat;
 	background-size:7.750rem auto;
 }
 .mcard_41 .location-section .head .tel{
@@ -2147,7 +2147,7 @@
 }
 .mcard_53 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_53/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_53/wedding_day.png") center bottom 1px no-repeat;
 	background-size:7.750rem auto;
 }
 .mcard_53 .location-section .head .tel{
@@ -2214,7 +2214,7 @@
 }
 .mcard_54 .visual-section .vertical-item.tit{
 	padding:3.125rem 0 1.250rem;
-	background:url("/mobile/new_m/mcard/images/mcard_54/visual_bg1.jpg") 0 0 repeat-y;
+	background:url("./mobile/new_m/mcard/images/mcard_54/visual_bg1.jpg") 0 0 repeat-y;
 	background-size:100% auto;
 }
 .mcard_54 .visual-section .vertical-item.tit img{
@@ -2222,7 +2222,7 @@
 }
 .mcard_54 .visual-section .vertical-item.photo{
 	padding:0.625rem 0;
-	background:url("/mobile/new_m/mcard/images/mcard_54/visual_bg3.jpg") 0 0 repeat-y;
+	background:url("./mobile/new_m/mcard/images/mcard_54/visual_bg3.jpg") 0 0 repeat-y;
 	background-size:100% auto;
 }
 .mcard_54 .visual-section .vertical-item.photo img{
@@ -2230,7 +2230,7 @@
 }
 .mcard_54 .visual-section .vertical-item.info{
 	padding:1.250rem 0 3.125rem;
-	background:url("/mobile/new_m/mcard/images/mcard_54/visual_bg2.jpg") 0 0 repeat-y;
+	background:url("./mobile/new_m/mcard/images/mcard_54/visual_bg2.jpg") 0 0 repeat-y;
 	background-size:100% auto;
 }
 .mcard_54 .visual-section .vertical-item.info .p1{
@@ -2314,7 +2314,7 @@
 
 .mcard_54 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_54/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_54/wedding_day.png") center bottom 1px no-repeat;
 	background-size:7.750rem auto;
 }
 .mcard_54 .location-section .head .tel{
@@ -2377,7 +2377,7 @@
 
 .mcard_55 .visual-section{
 	min-height:40.000rem;
-	background:url("/mobile/new_m/mcard/images/mcard_55/visua_bg.jpg");
+	background:url("./mobile/new_m/mcard/images/mcard_55/visua_bg.jpg");
 	background-size:cover;
 }
 .mcard_55 .visual-section .vertical-item{
@@ -2403,7 +2403,7 @@
 	left:-0.656rem; top:-0.656rem;
 	right:-0.656rem; bottom:-0.656rem;
 	display:block;
-	background:url("/mobile/new_m/mcard/images/mcard_55/visual_bg2.png") center center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_55/visual_bg2.png") center center no-repeat;
 	background-size:100% auto;
 }
 .mcard_55 .visual-section .vertical-item.photo img{
@@ -2523,7 +2523,7 @@
 
 .mcard_55 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_55/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_55/wedding_day.png") center bottom 1px no-repeat;
 	background-size:7.750rem auto;
 }
 .mcard_55 .location-section .head .tel{
@@ -2612,7 +2612,7 @@
 	display:block;
 	width:14.375rem;
 	height:1.438rem;
-	background:url("/mobile/new_m/mcard/images/mcard_43/visual_02.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_43/visual_02.png") 0 0 no-repeat;
 	background-size:auto 100%;
 }
 .mcard_43 .visual-section .vertical-item.info{
@@ -2705,7 +2705,7 @@
 
 .mcard_43 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_43/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_43/wedding_day.png") center bottom 1px no-repeat;
 	background-size:5.500rem auto;
 }
 .mcard_43 .location-section .head .tel{
@@ -2742,7 +2742,7 @@
 	display:block;
 	width:0.625rem;
 	height:0.625rem;
-	background:url("/mobile/new_m/mcard/images/mcard_44/sub_title_intro.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_44/sub_title_intro.png") 0 0 no-repeat;
 	background-size:100% auto;
 }
 .mcard_44 .greeting-section .sec-tit span{
@@ -2963,7 +2963,7 @@
 }
 .mcard_45 .video-section .sec-tit{
 	padding:1.688rem 1rem 1.250rem;
-	background:url("/mobile/new_m/mcard/images/mcard_45/sub_title_movie_2.png") 100% 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_45/sub_title_movie_2.png") 100% 0 no-repeat;
 	background-size:6.438rem auto;
 }
 .mcard_45 .video-section .sec-tit img{
@@ -2986,7 +2986,7 @@
 }
 .mcard_45 .message-section .sec-tit{
 	padding:1.375rem 1rem 1.250rem;
-	background:url("/mobile/new_m/mcard/images/mcard_45/sub_title_message_2.png") right 1rem top no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_45/sub_title_message_2.png") right 1rem top no-repeat;
 	background-size:4.563rem auto;
 }
 .mcard_45 .message-section .sec-tit img{
@@ -3272,12 +3272,12 @@
 }
 .mcard_46 .tbanner-section .text:after{
 	top:0;
-	background:url("/mobile/new_m/mcard/images/mcard_46/tbanner_01.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_46/tbanner_01.png") 0 0 no-repeat;
 	background-size:0.688rem auto;
 }
 .mcard_46 .tbanner-section .text:before{
 	bottom:0;
-	background:url("/mobile/new_m/mcard/images/mcard_46/tbanner_02.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_46/tbanner_02.png") 0 0 no-repeat;
 	background-size:0.688rem auto;
 }
 .mcard_46 .location-section .head .tel{
@@ -3322,11 +3322,11 @@
 }
 
 .mcard_47 .com-btn.tel.sl{
-	background-image:url("/mobile/new_m/mcard/images/mcard_47/icon_tel.png");
+	background-image:url("./mobile/new_m/mcard/images/mcard_47/icon_tel.png");
 	background-color:#fff;
 }
 .mcard_47 .com-btn.tel.sb{
-	background-image:url("/mobile/new_m/mcard/images/mcard_47/icon_tel.png");
+	background-image:url("./mobile/new_m/mcard/images/mcard_47/icon_tel.png");
 	background-color:#fff;
 }
 .mcard_47 .com-btn.acc.sl{
@@ -3338,7 +3338,7 @@
 	color:#f7b7b5;
 }
 .mcard_47 .com-btn.sms{
-	background-image:url("/mobile/new_m/mcard/images/mcard_47/icon_sms.png");
+	background-image:url("./mobile/new_m/mcard/images/mcard_47/icon_sms.png");
 	background-color:#fff;
 }
 
@@ -3401,7 +3401,7 @@
 	display:block;
 	width:2.125rem;
 	height:0.438rem;
-	background:url("/mobile/new_m/mcard/images/mcard_47/visual_02_01.png") center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_47/visual_02_01.png") center no-repeat;
 	background-size:auto 0.438rem;
 }
 .mcard_47 .visual-section .vertical-item.info .name .vs-span.sb:after{
@@ -3412,7 +3412,7 @@
 	display:block;
 	width:1.750rem;
 	height:0.438rem;
-	background:url("/mobile/new_m/mcard/images/mcard_47/visual_02_02.png") center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_47/visual_02_02.png") center no-repeat;
 	background-size:auto 0.438rem;
 }
 .mcard_47 .visual-section .vertical-item.info .p1{
@@ -3518,7 +3518,7 @@
 
 /* ********************* 23번 템플릿 ********************* */
 .mcard_49 {
-	background:url("/mobile/new_m/mcard/images/mcard_49/bg.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_49/bg.png") 0 0 no-repeat;
 	background-size:100% auto;
 }
 .mcard_49 .sec-tit{
@@ -3575,7 +3575,7 @@
 	left:-0.438rem; top:-0.438rem;
 	right:-0.438rem; bottom:-0.438rem;
 	display:block;
-	background:url("/mobile/new_m/mcard/images/mcard_49/visual_photo.png") center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_49/visual_photo.png") center no-repeat;
 	background-size:18.875rem auto;
 }
 .mcard_49 .visual-section .vertical-item.photo .box img{
@@ -3750,7 +3750,7 @@
 
 .mcard_48 .vertical-top{
 	height:40rem;
-	background:url("/mobile/new_m/mcard/images/mcard_48/visual_01.jpg") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_48/visual_01.jpg") 0 0 no-repeat;
 	background-size:auto 40rem;
 	color:#fff;
 	overflow:hidden;
@@ -3823,7 +3823,7 @@
 
 .mcard_48 .greeting-section{
 	padding:1.875rem 0.625rem 3.125rem;
-	background:url("/mobile/new_m/mcard/images/mcard_48/intro_bg.png") 0 0 repeat-y;
+	background:url("./mobile/new_m/mcard/images/mcard_48/intro_bg.png") 0 0 repeat-y;
 	background-size:100% auto;
 }
 .mcard_48 .greeting-section .box{
@@ -3842,7 +3842,7 @@
 	left:0; top:0;
 	right:0;
 	height:calc(50% - 1.250rem);
-	background:url("/mobile/new_m/mcard/images/mcard_48/intro_box_top.png") 0 0 no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_48/intro_box_top.png") 0 0 no-repeat;
 	background-size:100% auto;
 }
 .mcard_48 .greeting-section .box .bg-top:after{
@@ -3852,7 +3852,7 @@
 	right:0;
 	display:block;
 	height:calc(100% - 3.750rem);
-	background:url("/mobile/new_m/mcard/images/mcard_48/intro_box_line.png") 0 0 repeat-y;
+	background:url("./mobile/new_m/mcard/images/mcard_48/intro_box_line.png") 0 0 repeat-y;
 	background-size:100% auto;
 }
 .mcard_48 .greeting-section .box .bg-bottom{
@@ -3860,7 +3860,7 @@
 	left:0;
 	right:0; bottom:0;
 	height:calc(50% - 1.250rem);
-	background:url("/mobile/new_m/mcard/images/mcard_48/intro_box_bottom.png") 0 100% no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_48/intro_box_bottom.png") 0 100% no-repeat;
 	background-size:100% auto;
 }
 .mcard_48 .greeting-section .box .bg-bottom:after{
@@ -3870,7 +3870,7 @@
 	right:0; bottom:3.750rem;
 	display:block;
 	height:calc(100% - 3.750rem);
-	background:url("/mobile/new_m/mcard/images/mcard_48/intro_box_line.png") 0 0 repeat-y;
+	background:url("./mobile/new_m/mcard/images/mcard_48/intro_box_line.png") 0 0 repeat-y;
 	background-size:100% auto;
 }
 .mcard_48 .greeting-section .box .bg-center{
@@ -3879,7 +3879,7 @@
 	right:0;
 	margin-top:-1.250rem;
 	height:2.500rem;
-	background:url("/mobile/new_m/mcard/images/mcard_48/intro_box_center.png") 0 100% no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_48/intro_box_center.png") 0 100% no-repeat;
 	background-size:100% auto;
 }
 .mcard_48 .greeting-section .sec-txt{
@@ -4031,7 +4031,7 @@
 	display:block;
 	width:3rem;
 	height:0.563rem;
-	background:url("/mobile/new_m/mcard/images/mcard_50/visual_02_01.png") center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_50/visual_02_01.png") center no-repeat;
 	background-size:auto 0.563rem;
 }
 .mcard_50 .visual-section .vertical-item.info .name .vs-span.sb:after{
@@ -4042,7 +4042,7 @@
 	display:block;
 	width:3rem;
 	height:0.563rem;
-	background:url("/mobile/new_m/mcard/images/mcard_50/visual_02_02.png") center no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_50/visual_02_02.png") center no-repeat;
 	background-size:auto 0.563rem;
 }
 .mcard_50 .visual-section .vertical-item.info .p1{
@@ -4061,7 +4061,7 @@
 .mcard_50 .greeting-section .sec-txt{
 	margin-bottom:0;
 	padding-bottom:3.438rem;
-	background:url("/mobile/new_m/mcard/images/mcard_50/intro_01.png") center bottom 0.813rem no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_50/intro_01.png") center bottom 0.813rem no-repeat;
 	background-size:1.875rem auto;
 }
 .mcard_50 .greeting-section .info .default,
@@ -4094,7 +4094,7 @@
 
 .mcard_50 .tbanner-section .text.vertical{
 	padding-bottom:2.188rem;
-	background:url("/mobile/new_m/mcard/images/mcard_50/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_50/wedding_day.png") center bottom 1px no-repeat;
 	background-size:8rem auto;
 }
 .mcard_50 .location-section .head .tel{
@@ -4245,7 +4245,7 @@
 	font-size:0.813rem;
 	line-height:1.313rem;
 	color:#7b5656;
-	background:url("/mobile/new_m/mcard/images/mcard_51/wedding_day.png") center bottom 1px no-repeat;
+	background:url("./mobile/new_m/mcard/images/mcard_51/wedding_day.png") center bottom 1px no-repeat;
 	background-size:8.750rem auto;
 	letter-spacing:0.05em;
 }
@@ -4264,7 +4264,7 @@
 
 /* ********************* 27번 템플릿 ********************* */
 .mcard_52 {
-	background:url("/mobile/new_m/mcard/images/mcard_52/bg.jpg") 0 0 repeat-y;
+	background:url("./mobile/new_m/mcard/images/mcard_52/bg.jpg") 0 0 repeat-y;
 	background-size:100% auto;
 }
 .mcard_52 .sec-tit{
