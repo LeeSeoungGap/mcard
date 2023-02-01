@@ -3,12 +3,12 @@
 <head>
 
 <meta charset="utf-8">
-<title>잇츠카드 모바일 청첩장</title>
+<title>모바일 청첩장</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,target-densitydpi=medium-dpi" />
 <meta name="format-detection" content="telephone=no" />
 <meta property="og:type" content="website">
 <meta property="og:image" content=""> <!-- Link Image -->
-<meta property="og:title" content="잇츠카드 모바일청첩장"> <!-- Link Title -->
+<meta property="og:title" content="모바일청첩장"> <!-- Link Title -->
 <meta property="og:description" content=""> <!-- Link Text -->
 <meta property="og:url" content=""> <!-- Link URL -->
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/earlyaccess/kopubbatang.css" /> <!-- font-family: 'KoPub Batang'; -->
@@ -44,20 +44,20 @@
 			<section class="visual-section h-100">
 				<div class="vertical-center">
 					<div class="vertical-item date">
-						<p class="date">10月26日</p>
+						<p class="date">3月11日</p>
 					</div>
 					<div class="vertical-item photo">
 						<img src="./mobile/new_m/mcard/images/mcard_29/visual_01.jpg" alt="">
 					</div>
 					<div class="vertical-item info">
 						<p class="p1">
-							<span class="vs-span">이지훈</span>
+							<span class="vs-span">이승갑</span>
 							<span class="vs-span bar"></span>
-							<span class="vs-span">유수진</span>
+							<span class="vs-span">김유경</span>
 						</p>
 						<p class="p2">
-							토요일 오후 1시 30분<br>
-							잇츠카드 웨딩홀 6층 노블레스홀
+							토요일 오후 12시 30분<br>
+							 웨딩홀 6층 노블레스홀
 						</p>
 					</div>
 				</div>
@@ -347,15 +347,26 @@
 						</div>
 						<a href="javascript:pcAlert();" class="tel">전화걸기</a>
 					</div>
-					<div id="map_canvas" class="map">
-						<div style="font:normal normal 400 12px/normal dotum, sans-serif; width:100%; height:100%; color:#333; position:relative">
-							<div style="height: 100%;">
-								<a href="https://map.kakao.com/?urlX=510720.0&amp;urlY=1124069.0&amp;itemId=26497843&amp;q=%EC%84%9C%EC%9A%B8%EC%88%B2A%ED%83%80%EC%9B%8C&amp;srcid=26497843&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
-									<img class="map" src=".//t1.daumcdn.net/roughmap/imgmap/e4a136bdc0a737dd8c6a0812eebdb5fa1bfe55660e458c000633c51c83b13def" width="100%" height="100%">
-								</a>
-							</div>
-						</div>
-					</div>
+					
+					<!-- * 카카오맵 - 지도퍼가기 -->
+					<!-- 1. 지도 노드 -->
+					<div id="daumRoughmapContainer1675259534193" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+					
+					<!--
+						2. 설치 스크립트
+						* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+					-->
+					<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+					
+					<!-- 3. 실행 스크립트 -->
+					<script charset="UTF-8">
+						new daum.roughmap.Lander({
+							"timestamp" : "1675259534193",
+							"key" : "2dm4i",
+							"mapWidth" : "640",
+							"mapHeight" : "360"
+						}).render();
+					</script>
 					<div class="link">
 						<ul>
 							<li>
