@@ -38,7 +38,7 @@ body{background:url("/mcard/mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 
 .accountCopy .form .group:after {content: '';display: block;clear: both;}
 .accountCopy .form .input{font-family: 'Noto Sans KR';font-size: 1rem;width: 77%;height: 2.5rem;border: 1px solid #eee;background: #f9f9f9;padding-left: 0.875rem;}
 .accountCopy .form .btn{background: #5b1eaa;color: #fff;height: 2.5rem;width: 3.75rem;font-size: 0.813rem;font-family: 'Noto Sans KR';}
-.accountCopy .close-btn{position:absolute; right:0; top:0; display:block; width:3.375rem; height:3.125rem; background:url("/mcard/mobile/new_m/mcard/images/common/message_delete_02.png") 50% 50% no-repeat; background-size:0.875rem; font-size:0; line-height:0;}
+.accountCopy .close-btn{position:absolute; right:0; top:0; display:block; width:3.375rem; height:3.125rem; background:url("/mcard/mobile/new_m/mcard/images/common/message_delete.png") 50% 50% no-repeat; background-size:0.875rem; font-size:0; line-height:0;}
 
 .copyComplete .pop-body{padding:0 0 2.5rem;}
 .copyComplete .form .group{padding:2.5rem 2rem;text-align:center;}
