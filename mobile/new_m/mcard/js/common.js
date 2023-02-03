@@ -108,8 +108,8 @@ var popGallerySlider;
 function imageGallery() { // 포토갤러리
 	imgGallerySlider = $('#image-gallery').lightSlider({
 		gallery:true,
-		item:1,
-		thumbItem:5,
+		item:2,
+		thumbItem:2,
 		slideMargin: 0,
 		speed:500,
 		auto:false,
