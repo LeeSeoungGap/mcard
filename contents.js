@@ -1,4 +1,5 @@
 document.addEventListener('alpine:init', () => {
+	dataPicker('2023-03-11');
     Alpine.data('data', () => ({
     	//결혼식 날짜
         date: '3月11日',		
@@ -65,11 +66,5 @@ document.addEventListener('alpine:init', () => {
         //신랑신부 계좌
         bank: "하나은행",
         bankNum: "306-910675-39007",
-        
-        
-        
-
-
-        
     }));
 });

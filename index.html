@@ -277,12 +277,27 @@
 			<section class="account-section">
 				<div class="sec-tit">신랑신부에게 마음 전하기</div>
 				<div class="sec-txt">축하의 마음을 담아 축의금을 전달해보세요.</div>
-				<div class="ib">
-					<div class="row">
-						<div class="slsb-btn">
-							<a href="javascript:popOpen('0 1rem','accountCopyB');"
-								class="com-btn acc sb">계좌번호 보기</a>
+				<div class="accountCopy" id="accountCopyB" style="display:black">
+					<div class="pop-inner">
+						<div class="pop-head">계좌번호</div>
+						<div class="pop-body">
+							<div class="form">
+								<form action="">
+									<div class="group col-2 first">
+										<div x-text="bank"></div>
+										<div x-html="'<span>예금주 : </span>'+mNm">
+										</div>
+									</div>
+									<div class="group">
+										<div>
+											<input name="BBankNum1" id="BBankNum1" class="input" readonly="" :value="bankNum">
+											<button type="button" class="btn" @click="jsCopyLink($event.target.getAttribute('bankNum').replace(/-/gi,''), 'accountCopyG')">복사</button>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
+						<button href="javascript:void(0);" class="close-btn" onclick="popClose('accountCopyB')">닫기</button>
 					</div>
 				</div>
 			</section>
@@ -360,33 +375,6 @@
 		<button href="#" class="close-btn"
 			onclick="galleryPOP('close', 'type1')">닫기</button>
 	</div>
-	<div class="pop-wrap accountCopy" id="accountCopyB">
-		<div class="pop-inner">
-			<div class="pop-head">계좌번호</div>
-			<div class="pop-body">
-				<div class="form">
-					<form action="">
-						<div class="group col-2 first">
-							<div x-text="bank"></div>
-							<div>
-								<span>예금주 : 이승갑</span> 
-							</div>
-						</div>
-						<div class="group">
-							<div>
-								<input name="BBankNum1" id="BBankNum1" class="input" readonly
-									:value="bankNum">
-								<button type="button" class="btn"
-									onclick="jsCopyLink('30691067539007', 'accountCopyG')">복사</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-			<button href="javascript:void(0);" class="close-btn"
-				onclick="popClose('accountCopyB')">닫기</button>
-		</div>
-	</div>
 
 	<div class="pop-wrap copyComplete" id="copyComplete">
 		<div class="pop-inner">
@@ -398,8 +386,8 @@
 								<div>
 									<div class="tit">계좌번호가 복사되었습니다.</div>
 									<div class="bkinfo">
-										<span>하나은행 306-910675-39007</span><br> <span>예금주
-											이승갑</span>
+										<span x-text="bank+' '+bankNum"></span><br> 
+										<span x-text="'예금주 '+mNm"></span>
 									</div>
 								</div>
 							</div>
@@ -461,8 +449,6 @@
 		popGallery();
 
 		// 달력
-		dataPicker('2023-03-11');
-
 		// 다음 지도
 		// daumMap(37.546303, 127.048160);
 
