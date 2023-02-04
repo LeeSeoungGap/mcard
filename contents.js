@@ -66,5 +66,6 @@ document.addEventListener('alpine:init', () => {
         //신랑신부 계좌
         bank: "하나은행",
         bankNum: "306-910675-39007",
+        bankNumrepl: "30691067539007",
     }));
 });
