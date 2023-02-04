@@ -69,10 +69,14 @@ document.addEventListener('alpine:init', () => {
         kakaoMapImg: "http://t1.daumcdn.net/roughmap/imgmap/7a0d58e5f7f9b608f5b809a22e4a59964807603372ad3881cad2a34a12407b4c",
         naverMap: "https://naver.me/5kX10LAT",
         
-        //신랑신부 계좌
+        //신랑 계좌
         bank: "하나은행",
         bankNum: "306-910675-39007",
-        bankNumrepl: "30691067539007",
+        
+        //신부 계좌
+        wBank: "부산은행",
+        wBankNum: "112-2103-5032-07",
+        
         //알림
         alram: `<ol style="padding-left: 60px; font-size: 21px;">
 					<li style="list-style: decimal-leading-zero;">원할한 좌석 배치와 식사 준비를 위하여,<br>참석여부와 동반인원수를 미리 알려주시기를 부탁드립니다.</li>
@@ -86,6 +90,6 @@ document.addEventListener('alpine:init', () => {
             <dd>100번, 181번, 185번, 해운대구 마을버스 9번</dd>
             <br>
             <dt>지하철 </dt>
-			<dd>동해선 송정역 하차, 도보 25분 거리</dd>`
+			<dd>동해선 송정역 하차, 도보 25분 거리</dd>`,
     }));
 });

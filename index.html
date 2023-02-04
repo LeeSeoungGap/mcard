@@ -304,8 +304,7 @@
 										<div>
 											<input name="BBankNum1" id="BBankNum1" class="input"
 												readonly="" :value="bankNum">
-											<button type="button" class="btn"
-												@click="jsCopyLink($event.target.getAttribute('bankNumrepl'), 'accountCopyB')">복사</button>
+											<button type="button" class="btn" openid="accountCopyB" :nm="'예금주  '+ Nm" :bank="bank" :bankNum="bankNum">복사</button>
 										</div>
 									</div>
 								</form>
@@ -328,8 +327,7 @@
 										<div>
 											<input name="BBankNum2" id="BBankNum2" class="input"
 												readonly="" :value="wBankNum">
-											<button type="button" class="btn"
-												@click="jsCopyLink($event.target.getAttribute('wBankNumrepl'), 'accountCopyG')">복사</button>
+											<button type="button" class="btn" openid="accountCopyG" :nm="'예금주  '+wNm" :bank="wBank" :bankNum="wBankNum">복사</button>
 										</div>
 									</div>
 								</form>
@@ -425,8 +423,8 @@
 								<div>
 									<div class="tit">계좌번호가 복사되었습니다.</div>
 									<div class="bkinfo">
-										<span x-text="bank+'  '+bankNum"></span><br> <span
-											x-text="'예금주  '+ mNm"></span>
+										<span id="copyBank"></span><br> 
+										<span id="copyNm"></span>
 									</div>
 								</div>
 							</div>
@@ -447,10 +445,25 @@
 
 		// 팝업갤러리
 		popGallery();
+		
+		$(document).ready(function(){
+			$(".account-section .accountCopy .group button").on("click", function(){
+				var openId = $(this).openid;
+				var nm = $(this).nm;
+				var bank = $(this).bank;
+				var bankNum = $(this).bankNum;
+				var copyText = bankNum.replace(/-/gi, "");
+				jsCopyLink(copyText, openId, bank + "  " bankNum, "예금주  "+ nm);
+			}, this);
+		});
 
-		function jsCopyLink(copyText, id) {
+		function jsCopyLink(copyText, id, copyBank, copyNm) {
 			var tmpTextarea = document.createElement('textarea');
 			tmpTextarea.value = copyText;
+			$("#"+id+" .input")
+			$(".bkinfo #copyBank").text(copyBank);
+			$(".bkinfo #copyNm").text(copyNm);
+			
 
 			document.body.appendChild(tmpTextarea);
 			tmpTextarea.select();
