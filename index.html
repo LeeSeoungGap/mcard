@@ -70,35 +70,75 @@
 				</div>
 			</section>
 			<!-- 비주얼 //-->
-
-			<!--// 인사말 -->
-			<section class="greeting-section">
+			<section class="gallery-section">
 				<div class="sec-tit" x-text="gTitle"></div>
-				<div class="sec-txt" x-html="gTxt"></div>
-				<div class="info">
-					<div class="ib">
-						<div class="tb">
-							<div class="row">
-								<p class="honju">
-									<span class="gt-span" x-text="mHm"></span> <span
-										class="gt-span bul"></span> <span class="gt-span" x-text="mHw"></span>
-								</p>
-								<p class="default">의</p>
-								<p class="gwangye" x-text="mGw"></p>
-								<p class="slsb" x-text="mNm"></p>
+				<div class="contain">
+					<ul id="image-gallery"
+						class="gallery list-unstyled cS-hidden roll_type02">
+						<li
+							data-thumb="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1"
+							onclick="galleryPOP('open', 'type1');">
+							<div class="box">
+								<div class="pos">
+									<div class="cen">
+										<img
+											src="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" />
+									</div>
+								</div>
 							</div>
-							<div class="row">
-								<p class="honju">
-									<span class="gt-span" x-text="wHm"></span> <span
-										class="gt-span bul"></span> <span class="gt-span" x-text="wHw"></span>
-								</p>
-								<p class="default">의</p>
-								<p class="gwangye" x-text="wGw"></p>
-								<p class="slsb" x-text="wNm"></p>
+						</li>
+						<li
+							data-thumb="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1"
+							onclick="galleryPOP('open', 'type2');">
+							<div class="box">
+								<div class="pos">
+									<div class="cen">
+										<img
+											src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" />
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--// 텍스트 배너 -->
+			<section class="tbanner-section">
+				<div class="text vertical">
+					<div class="info">
+						<div class="ib">
+							<div class="tb">
+								<div class="row">
+									<p class="honju">
+										<span class="gt-span" x-text="mHm"></span> <span
+											class="gt-span bul"></span> <span class="gt-span" x-text="mHw"></span>
+									</p>
+									<p class="default">의</p>
+									<p class="gwangye" x-text="mGw"></p>
+									<p class="slsb" x-text="mNm"></p>
+								</div>
+								<div class="row">
+									<p class="honju">
+										<span class="gt-span" x-text="wHm"></span> <span
+											class="gt-span bul"></span> <span class="gt-span" x-text="wHw"></span>
+									</p>
+									<p class="default">의</p>
+									<p class="gwangye" x-text="wGw"></p>
+									<p class="slsb" x-text="wNm"></p>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="ib">
+					</div>
 				</div>
+			</section>
+			
+			<!--// 인사말 -->
+			<section class="greeting-section">
+				<div class="sec-tit" ></div>
+				<div class="sec-txt" x-html="gTxt"></div>
+				
 			</section>
 			<!-- 인사말 //-->
 
@@ -179,45 +219,7 @@
 				</div>
 			</section>
 			<!-- 달력 //-->
-			<section class="gallery-section">
-				<div class="sec-tit">갤러리</div>
-				<div class="contain">
-					<ul id="image-gallery"
-						class="gallery list-unstyled cS-hidden roll_type02">
-						<li
-							data-thumb="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1"
-							onclick="galleryPOP('open', 'type1');">
-							<div class="box">
-								<div class="pos">
-									<div class="cen">
-										<img
-											src="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" />
-									</div>
-								</div>
-							</div>
-						</li>
-						<li
-							data-thumb="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1"
-							onclick="galleryPOP('open', 'type2');">
-							<div class="box">
-								<div class="pos">
-									<div class="cen">
-										<img
-											src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" />
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!--// 텍스트 배너 -->
-			<section class="tbanner-section">
-				<div class="text vertical">
-					<div class="ib">
-					</div>
-				</div>
-			</section>
+			
 			<!-- 텍스트 배너 //-->
 			<section class="location-section">
 				<div class="sec-tit" style="margin-bottom:0">알려드립니다</div>
