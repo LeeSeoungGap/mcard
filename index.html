@@ -112,15 +112,15 @@
 					<div class="row">
 						<div class="slsb-tit">신랑에게 연락하기</div>
 						<div class="slsb-btn">
-							<a href="tel:01097909994" class="com-btn tel sl">연락하기</a> <a
-								href="sms:01097909994" class="com-btn sms">문자보내기</a>
+							<a :href="mTel" class="com-btn tel sl">연락하기</a> <a
+								:href="mSms"" class="com-btn sms">문자보내기</a>
 						</div>
 					</div>
 					<div class="row">
 						<div class="slsb-tit">신부에게 연락하기</div>
 						<div class="slsb-btn">
-							<a href="tel:01077400430" class="com-btn tel sl">연락하기</a> <a
-								href="sms:01077400430" class="com-btn sms">문자보내기</a>
+							<a :href="wTel" class="com-btn tel sl">연락하기</a> <a
+								:href="wSms" class="com-btn sms">문자보내기</a>
 						</div>
 					</div>
 				</div>
@@ -141,8 +141,8 @@
 								<span x-text="mHwGw"></span> <strong x-text="mHw"></strong>
 							</div>
 							<div class="honju-btn">
-								<a href="tel:01057553628" class="com-btn tel sl">연락하기</a> <a
-									href="sms:01057553628" class="com-btn sms">문자보내기</a>
+								<a :href="mHTel" class="com-btn tel sl">연락하기</a> <a
+									:href="mHSms" class="com-btn sms">문자보내기</a>
 							</div>
 						</div>
 					</div>
@@ -156,8 +156,8 @@
 								<span x-text="wHwGw"></span> <strong x-text="wHw"></strong>
 							</div>
 							<div class="honju-btn">
-								<a href="tel:01048004224" class="com-btn tel sl">연락하기</a> <a
-									href="sms:01048004224" class="com-btn sms">문자보내기</a>
+								<a :href="wHTel" class="com-btn tel sl">연락하기</a> <a
+									:href="wHSms" class="com-btn sms">문자보내기</a>
 							</div>
 						</div>
 					</div>
@@ -233,9 +233,9 @@
 							style="font: normal normal 400 12px/normal dotum, sans-serif; width: 100%; height: 100%; color: #333; position: relative">
 							<div style="height: 100%;">
 								<a
-									href="https://map.kakao.com/?urlX=1003801.0&amp;urlY=475405.0&amp;itemId=625926405&amp;q=%EB%8C%80%EB%B3%B4%EB%A6%84%20%EC%B9%B4%ED%8E%98%20%EC%95%A4%20%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&amp;srcid=625926405&amp;map_type=TYPE_MAP&amp;from=roughmap"
+									:href="kakaoMap"
 									target="_blank"> <img class="map"
-									src="http://t1.daumcdn.net/roughmap/imgmap/7a0d58e5f7f9b608f5b809a22e4a59964807603372ad3881cad2a34a12407b4c"
+									:src="kakaoMapImg"
 									width="100%" height="100%">
 								</a>
 							</div>
@@ -243,10 +243,10 @@
 					</div>
 					<div class="link">
 						<ul>
-							<li><a href="https://naver.me/5kX10LAT" class="navermap"
+							<li><a :href="naverMap" class="navermap"
 								target="_blank">네이버지도</a></li>
 							<li><a
-								href="https://map.kakao.com/?urlX=1003801.0&amp;urlY=475405.0&amp;itemId=625926405&amp;q=%EB%8C%80%EB%B3%B4%EB%A6%84%20%EC%B9%B4%ED%8E%98%20%EC%95%A4%20%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&amp;srcid=625926405&amp;map_type=TYPE_MAP&amp;from=roughmap"
+								:href="kakaoMap"
 								class="kakaomap" target="_blank">카카오맵</a></li>
 						</ul>
 					</div>
@@ -367,15 +367,15 @@
 				<div class="form">
 					<form action="">
 						<div class="group col-2 first">
-							<div>하나은행</div>
+							<div x-text="bank"></div>
 							<div>
-								<span>예금주 : </span> 이승갑
+								<span>예금주 : 이승갑</span> 
 							</div>
 						</div>
 						<div class="group">
 							<div>
 								<input name="BBankNum1" id="BBankNum1" class="input" readonly
-									value="306-910675-39007">
+									:value="bankNum">
 								<button type="button" class="btn"
 									onclick="jsCopyLink('30691067539007', 'accountCopyG')">복사</button>
 							</div>

@@ -4,10 +4,14 @@ document.addEventListener('alpine:init', () => {
         date: '3月11日',		
         //신랑이름
         mNm: "이승갑",
+        mTel: "tel:01097909994",
+        mSms: "sms:01097909994",
         //신랑 집안 관계
         mGw: "장남",
         //신부이름
-        wNm: "김유경",	
+        wNm: "김유경",
+        wTel: "tel:01077400430",
+        wSms: "sms:01077400430",
         //신부 집안 관계
         wGw: "차녀",
         //요일시간&장소
@@ -31,11 +35,15 @@ document.addEventListener('alpine:init', () => {
         mHm: "이광호",
         mHwGw: "어머니",
         mHw: "손선자",
+        mHTel: "tel:01057553628",
+        mHSms: "sms:01057553628",
         // 혼주 여 
         wHmGw: "아버지",
         wHm: "김병윤",
         wHwGw: "어머니",
         wHw: "주임숙",
+        wHTel: "tel:01048004224",
+        wHSms: "sms:01048004224",	
 
         //배너 텍스트
         btext: "소 중 한 &nbsp; 당 신 을 &nbsp; 초 대 합 니 다",
@@ -48,7 +56,17 @@ document.addEventListener('alpine:init', () => {
         //여자혼주 계좌
         wHAcc: "",
         //기타 할말
-        etc: "<dt>기타안내</dt><dd>화환은 정중히 사양합니다.</dd>"
+        etc: "<dt>기타안내</dt><dd>화환은 정중히 사양합니다.</dd>",
+        
+        kakaoMap: "https://map.kakao.com/?urlX=1003801.0&amp;urlY=475405.0&amp;itemId=625926405&amp;q=%EB%8C%80%EB%B3%B4%EB%A6%84%20%EC%B9%B4%ED%8E%98%20%EC%95%A4%20%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&amp;srcid=625926405&amp;map_type=TYPE_MAP&amp;from=roughmap",
+        kakaoMapImg: "http://t1.daumcdn.net/roughmap/imgmap/7a0d58e5f7f9b608f5b809a22e4a59964807603372ad3881cad2a34a12407b4c",
+        naverMap: "https://naver.me/5kX10LAT",
+        
+        //신랑신부 계좌
+        bank: "하나은행",
+        bankNum: "306-910675-39007",
+        
+        
         
 
 
