@@ -79,7 +79,7 @@ document.addEventListener('alpine:init', () => {
         
         //알림
         alram: `<ol style="padding: 0 60px 0 60px;font-size: 0.750rem;">
-					<li style="list-style: decimal-leading-zero;">원할한 좌석 배치와 식사 준비를 위하여,<br>참석여부와 동반인원수를 미리 알려주시기를 부탁드립니다.</li>
+					<li style="list-style: decimal-leading-zero;">원활한 좌석 배치와 식사 준비를 위하여,<br>참석여부와 동반인원수를 미리 알려주시기를 부탁드립니다.</li>
 					<li style="list-style: decimal-leading-zero;">식이 종료되면, 앉아계신 자리로 식사가 준비됩니다. 스테이크 코스요리이며, 작은 뷔페가 준비되어 있습니다.</li>
 					<li style="list-style: decimal-leading-zero;">건물 내 주차공간은 충분하며,<br>3시간 무료주차입니다.</li>
 					<li style="list-style: decimal-leading-zero;">당일 단독 예식으로, 오랜만에 만난 가족분들과 여유있는 시간을 보내시길 소망합니다.</li>
