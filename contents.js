@@ -59,7 +59,7 @@ document.addEventListener('alpine:init', () => {
         //기타 할말
         etc: "<dt>기타안내</dt><dd>화환은 정중히 사양합니다.</dd>",
         
-        kakaoMap: "https://map.kakao.com/?urlX=1003801.0&amp;urlY=475405.0&amp;itemId=625926405&amp;q=%EB%8C%80%EB%B3%B4%EB%A6%84%20%EC%B9%B4%ED%8E%98%20%EC%95%A4%20%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&amp;srcid=625926405&amp;map_type=TYPE_MAP&amp;from=roughmap",
+        kakaoMap: "https://kko.to/1KKWaoD2O2",
         kakaoMapImg: "http://t1.daumcdn.net/roughmap/imgmap/7a0d58e5f7f9b608f5b809a22e4a59964807603372ad3881cad2a34a12407b4c",
         naverMap: "https://naver.me/5kX10LAT",
         
