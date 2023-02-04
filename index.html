@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-
 <meta charset="utf-8">
 <title>모바일 청첩장</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,target-densitydpi=medium-dpi" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,target-densitydpi=medium-dpi" />
 <meta name="format-detection" content="telephone=no" />
 <meta property="og:type" content="website">
-<meta property="og:image" content=""> <!-- Link Image -->
-<meta property="og:title" content="모바일청첩장"> <!-- Link Title -->
-<meta property="og:description" content=""> <!-- Link Text -->
-<meta property="og:url" content=""> <!-- Link URL -->
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/earlyaccess/kopubbatang.css" /> <!-- font-family: 'KoPub Batang'; -->
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/earlyaccess/nanummyeongjo.css" /> <!-- font-family: 'Nanum Myeongjo'; -->
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/earlyaccess/notosanskr.css" /> <!-- font-family: 'Noto Sans KR'; -->
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" /> <!-- font-family: 'Nanum Gothic'; -->
-<link rel="stylesheet" type="text/css" href="/mcard/mobile/new_m/mcard/css/lightSlider.css" />
-<link rel="stylesheet" type="text/css" href="/mcard/mobile/new_m/mcard/css/style.css?v=0.0.3" />
-<script type="text/javascript" src="/mcard/mobile/new_m/mcard/js/jquery-1.12.4.min.js"></script> 
-<script type="text/javascript" src="/mcard/mobile/new_m/mcard/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/mcard/mobile/new_m/mcard/js/lightSlider.js"></script>
-<script type="text/javascript" src="/mcard/mobile/new_m/mcard/js/jquery.rwdImageMaps.min.js"></script>
-<script type="text/javascript" src="/mcard/mobile/new_m/mcard/js/common.js"></script>
-<script type="text/javascript" src="/mcard/contents.js"></script>
-<script>
-	this.date = 3月11日;
-</script>
+<meta property="og:image" content="">
+<!-- Link Image -->
+<meta property="og:title" content="모바일청첩장">
+<!-- Link Title -->
+<meta property="og:description" content="">
+<!-- Link Text -->
+<meta property="og:url" content="">
+<!-- Link URL -->
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/earlyaccess/kopubbatang.css" />
+<!-- font-family: 'KoPub Batang'; -->
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/earlyaccess/nanummyeongjo.css" />
+<!-- font-family: 'Nanum Myeongjo'; -->
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/earlyaccess/notosanskr.css" />
+<!-- font-family: 'Noto Sans KR'; -->
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<!-- font-family: 'Nanum Gothic'; -->
+<link rel="stylesheet" type="text/css"
+	href="/mcard/mobile/new_m/mcard/css/lightSlider.css" />
+<link rel="stylesheet" type="text/css"
+	href="/mcard/mobile/new_m/mcard/css/style.css?v=0.0.3" />
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/jquery-ui.min.js"></script>
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/lightSlider.js"></script>
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/jquery.rwdImageMaps.min.js"></script>
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/common.js"></script>
 </head>
 <body class="mcard_29">
+	<script src="//unpkg.com/alpinejs" defer></script>
+	<script type="text/javascript" src="/mcard/contents.js"></script>
 	<div class="wrapper">
 		<section id="content">
 			<!--// 비주얼 -->
 			<section class="visual-section h-100">
 				<div class="vertical-center">
 					<div class="vertical-item date">
-						<p class="date">`${this.date}`</p>
+						<p class="date" x-text="date"></p>
 					</div>
 					<div class="vertical-item photo">
-						<img src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg" alt="">
+						<img :src="mainPhoto"> 
 					</div>
 					<div class="vertical-item info">
 						<p class="p1">
-							<span class="vs-span">이승갑</span>
-							<span class="vs-span bar"></span>
-							<span class="vs-span">김유경</span>
+							<span class="vs-span" x-text="man-nm"></span> <span class="vs-span bar"></span>
+							<span class="vs-span" x-text="woman-nm"></span>
 						</p>
-						<p class="p2">
-							토요일 오후 12시 30분<br>
-							대보름 Cafe & Ground
+						<p class="p2" x-html="timeNplace">
 						</p>
 					</div>
 				</div>
@@ -56,37 +70,28 @@
 
 			<!--// 인사말 -->
 			<section class="greeting-section">
-				<div class="sec-tit">이제 서로, 평생 함께</div>
-				<div class="sec-txt">서로가 마주보며 다져온 사랑을
-이제 함께 한 곳을 바라보며
-걸어갈 수 있는 큰 사랑으로
-키우고자 합니다.
-저희 두 사람이 사랑의 이름으로
-지켜나갈 수 있도록
-앞날을 축복해 주시면
-감사하겠습니다.</div>
+				<div class="sec-tit" x-text="greetings-title"></div>
+				<div class="sec-txt" x-text="greetings-txt"></div>
 				<div class="info">
 					<div class="ib">
 						<div class="tb">
 							<div class="row">
 								<p class="honju">
-									<span class="gt-span">이광호</span>
-									<span class="gt-span bul"></span>
-									<span class="gt-span">손선자</span>
+									<span class="gt-span" x-text="m-honju-m"></span> <span class="gt-span bul"></span>
+									<span class="gt-span" x-text="m-honju-w"></span>
 								</p>
 								<p class="default">의</p>
-								<p class="gwangye">장남</p>
-								<p class="slsb">이승갑</p>
+								<p class="gwangye" x-text="man-gwangye"></p>
+								<p class="slsb" x-text="man-nm"></p>
 							</div>
 							<div class="row">
 								<p class="honju">
-									<span class="gt-span">김병윤</span>
-									<span class="gt-span bul"></span>
-									<span class="gt-span">주임숙</span>
+									<span class="gt-span" x-text="w-honju-m"></span> <span class="gt-span bul"></span>
+									<span class="gt-span" x-text="w-honju-w"></span>
 								</p>
 								<p class="default">의</p>
-								<p class="gwangye">차녀</p>
-								<p class="slsb">김유경</p>
+								<p class="gwangye" x-text="woman-gwangye"></p>
+								<p class="slsb" x-text="woman-nm"></p>
 							</div>
 						</div>
 					</div>
@@ -97,7 +102,7 @@
 			<!--// 배너 -->
 			<section class="banner-section">
 				<div class="tb">
-					<p class="txt">소 중 한 &nbsp; 당 신 을 &nbsp; 초 대 합 니 다</p>
+					<p class="txt" x-html="btext"></p>
 				</div>
 			</section>
 			<!-- 배너 //-->
@@ -108,15 +113,15 @@
 					<div class="row">
 						<div class="slsb-tit">신랑에게 연락하기</div>
 						<div class="slsb-btn">
-							<a href="tel:01097909994" class="com-btn tel sl">연락하기</a>
-							<a href="sms:01097909994" class="com-btn sms">문자보내기</a>
+							<a href="tel:01097909994" class="com-btn tel sl">연락하기</a> <a
+								href="sms:01097909994" class="com-btn sms">문자보내기</a>
 						</div>
 					</div>
 					<div class="row">
 						<div class="slsb-tit">신부에게 연락하기</div>
 						<div class="slsb-btn">
-							<a href="tel:01077400430" class="com-btn tel sl">연락하기</a>
-							<a href="sms:01077400430" class="com-btn sms">문자보내기</a>
+							<a href="tel:01077400430" class="com-btn tel sl">연락하기</a> <a
+								href="sms:01077400430" class="com-btn sms">문자보내기</a>
 						</div>
 					</div>
 				</div>
@@ -130,22 +135,30 @@
 					<div class="col">
 						<div class="honju-tit sl">신랑 측 혼주</div>
 						<div class="box first">
-							<div class="name"><span>아버지</span> <strong>이광호</strong></div>
-							<div class="name"><span>어머니</span> <strong>손선자</strong></div>
+							<div class="name">
+								<span x-text="m-honju-m-gwangye"></span> <strong x-text="m-honju-m"></strong>
+							</div>
+							<div class="name">
+								<span x-text="m-honju-w-gwangye">어머니</span> <strong x-text="m-honju-w-gwangye"></strong>
+							</div>
 							<div class="honju-btn">
-								<a href="tel:01057553628" class="com-btn tel sl">연락하기</a>
-								<a href="sms:01057553628" class="com-btn sms">문자보내기</a>
+								<a href="tel:01057553628" class="com-btn tel sl">연락하기</a> <a
+									href="sms:01057553628" class="com-btn sms">문자보내기</a>
 							</div>
 						</div>
-					</div> 
+					</div>
 					<div class="col">
 						<div class="honju-tit sb">신부 측 혼주</div>
 						<div class="box first">
-							<div class="name"><span>아버지</span> <strong>김병윤</strong></div>
-							<div class="name"><span>어머니</span> <strong>주임숙</strong></div>
+							<div class="name">
+								<span x-text="w-honju-m-gwangye"></span> <strong x-text="w-honju-m"></strong>
+							</div>
+							<div class="name">
+								<span x-text="w-honju-w-gwangye"></span> <strong x-text="w-honju-w">주임숙</strong>
+							</div>
 							<div class="honju-btn">
-								<a href="tel:01048004224" class="com-btn tel sl">연락하기</a>
-								<a href="sms:01048004224" class="com-btn sms">문자보내기</a>
+								<a href="tel:01048004224" class="com-btn tel sl">연락하기</a> <a
+									href="sms:01048004224" class="com-btn sms">문자보내기</a>
 							</div>
 						</div>
 					</div>
@@ -158,7 +171,7 @@
 				<div class="calendar-wrap">
 					<div id="calendar"></div>
 					<div class="day-time">
-						<span class="day">sat.</span> <span class="time">pm 12:30</span>
+						<span class="day" x-html="calendar"></span>
 					</div>
 				</div>
 			</section>
@@ -166,21 +179,28 @@
 			<section class="gallery-section">
 				<div class="sec-tit">갤러리</div>
 				<div class="contain">
-					<ul id="image-gallery" class="gallery list-unstyled cS-hidden roll_type02">
-						<li data-thumb="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" onclick="galleryPOP('open', 'type1');">
+					<ul id="image-gallery"
+						class="gallery list-unstyled cS-hidden roll_type02">
+						<li
+							data-thumb="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1"
+							onclick="galleryPOP('open', 'type1');">
 							<div class="box">
 								<div class="pos">
 									<div class="cen">
-										<img src="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" />
+										<img
+											src="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" />
 									</div>
 								</div>
 							</div>
 						</li>
-						<li data-thumb="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" onclick="galleryPOP('open', 'type2');">
+						<li
+							data-thumb="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1"
+							onclick="galleryPOP('open', 'type2');">
 							<div class="box">
 								<div class="pos">
 									<div class="cen">
-										<img src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" />
+										<img
+											src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" />
 									</div>
 								</div>
 							</div>
@@ -192,7 +212,8 @@
 			<section class="tbanner-section">
 				<div class="text vertical">
 					<div class="ib">
-						<span class="vt">예쁘게<span class="space">잘</span>살겠습니다</span>
+						<span class="vt">예쁘게<span class="space">잘</span>살겠습니다
+						</span>
 					</div>
 				</div>
 			</section>
@@ -210,22 +231,25 @@
 						</div>
 					</div>
 					<div id="map_canvas" class="map">
-						<div style="font:normal normal 400 12px/normal dotum, sans-serif; width:100%; height:100%; color:#333; position:relative">
+						<div
+							style="font: normal normal 400 12px/normal dotum, sans-serif; width: 100%; height: 100%; color: #333; position: relative">
 							<div style="height: 100%;">
-								<a href="https://map.kakao.com/?urlX=1003801.0&amp;urlY=475405.0&amp;itemId=625926405&amp;q=%EB%8C%80%EB%B3%B4%EB%A6%84%20%EC%B9%B4%ED%8E%98%20%EC%95%A4%20%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&amp;srcid=625926405&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
-									<img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/7a0d58e5f7f9b608f5b809a22e4a59964807603372ad3881cad2a34a12407b4c" width="100%" height="100%">
+								<a
+									href="https://map.kakao.com/?urlX=1003801.0&amp;urlY=475405.0&amp;itemId=625926405&amp;q=%EB%8C%80%EB%B3%B4%EB%A6%84%20%EC%B9%B4%ED%8E%98%20%EC%95%A4%20%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&amp;srcid=625926405&amp;map_type=TYPE_MAP&amp;from=roughmap"
+									target="_blank"> <img class="map"
+									src="http://t1.daumcdn.net/roughmap/imgmap/7a0d58e5f7f9b608f5b809a22e4a59964807603372ad3881cad2a34a12407b4c"
+									width="100%" height="100%">
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="link">
 						<ul>
-							<li>
-								<a href="https://naver.me/5kX10LAT" class="navermap" target="_blank">네이버지도</a>
-							</li>
-							<li>
-								<a href="https://map.kakao.com/?urlX=1003801.0&amp;urlY=475405.0&amp;itemId=625926405&amp;q=%EB%8C%80%EB%B3%B4%EB%A6%84%20%EC%B9%B4%ED%8E%98%20%EC%95%A4%20%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&amp;srcid=625926405&amp;map_type=TYPE_MAP&amp;from=roughmap" class="kakaomap" target="_blank">카카오맵</a>
-							</li>
+							<li><a href="https://naver.me/5kX10LAT" class="navermap"
+								target="_blank">네이버지도</a></li>
+							<li><a
+								href="https://map.kakao.com/?urlX=1003801.0&amp;urlY=475405.0&amp;itemId=625926405&amp;q=%EB%8C%80%EB%B3%B4%EB%A6%84%20%EC%B9%B4%ED%8E%98%20%EC%95%A4%20%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&amp;srcid=625926405&amp;map_type=TYPE_MAP&amp;from=roughmap"
+								class="kakaomap" target="_blank">카카오맵</a></li>
 						</ul>
 					</div>
 				</div>
@@ -259,29 +283,27 @@
 				<div class="ib">
 					<div class="row">
 						<div class="slsb-btn">
-							<a href="javascript:popOpen('0 1rem','accountCopyB');" class="com-btn acc sb">계좌번호 보기</a>						
+							<a href="javascript:popOpen('0 1rem','accountCopyB');"
+								class="com-btn acc sb">계좌번호 보기</a>
 						</div>
-					</div>		
+					</div>
 				</div>
 			</section>
-		</div>
+	</div>
 
-		<!--// 푸터 -->
-		<footer id="footer">
-		    <div class="foot-share">
-		        <ul class="foot-share-list">
-		            <li>
-						<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js" integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
-						<script>
+	<!--// 푸터 -->
+	<footer id="footer">
+		<div class="foot-share">
+			<ul class="foot-share-list">
+				<li><script
+						src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+						integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx"
+						crossorigin="anonymous"></script> <script>
 						  Kakao.init('3c3b3335ddafa438dcb91710a37ab17f'); // 사용하려는 앱의 JavaScript 키 입력
-						</script>
-						
-						<a id="kakaotalk-sharing-btn" href="javascript:;">
-						  <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
-						    alt="카카오톡 공유 보내기 버튼" />
-						</a>
-						
-						<script>
+						</script> <a id="kakaotalk-sharing-btn" href="javascript:;"> <img
+						src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+						alt="카카오톡 공유 보내기 버튼" />
+				</a> <script>
 						  Kakao.Share.createDefaultButton({
 						    container: '#kakaotalk-sharing-btn',
 						    objectType: 'feed',
@@ -297,15 +319,14 @@
 						      },
 						    },
 						  });
-						</script>
-		            </li>
-		        </ul>
-		    </div>
-		    <div class="foot-logo">
-		        	카카오톡<br> 공유하기
-		    </div>
-		</footer>
-<!-- 푸터 //-->
+						</script></li>
+			</ul>
+		</div>
+		<div class="foot-logo">
+			카카오톡<br> 공유하기
+		</div>
+	</footer>
+	<!-- 푸터 //-->
 	</div>
 
 	<div class="gallery-pop-wrap">
@@ -313,28 +334,34 @@
 			<div class="tit">갤러리</div>
 		</div>
 		<div class="pop-body">
-			<ul id="pop-gallery" class="gallery list-unstyled cS-hidden roll_type02">
-				<li data-thumb="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1">
+			<ul id="pop-gallery"
+				class="gallery list-unstyled cS-hidden roll_type02">
+				<li
+					data-thumb="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1">
 					<div class="box">
 						<div class="pos">
 							<div class="cen">
-								<img src="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" />
+								<img
+									src="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" />
 							</div>
 						</div>
 					</div>
 				</li>
-				<li data-thumb="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1">
+				<li
+					data-thumb="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1">
 					<div class="box">
 						<div class="pos">
 							<div class="cen">
-								<img src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" />
+								<img
+									src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" />
 							</div>
 						</div>
 					</div>
 				</li>
 			</ul>
 		</div>
-		<button href="#" class="close-btn" onclick="galleryPOP('close', 'type1')">닫기</button>
+		<button href="#" class="close-btn"
+			onclick="galleryPOP('close', 'type1')">닫기</button>
 	</div>
 	<div class="pop-wrap accountCopy" id="accountCopyB">
 		<div class="pop-inner">
@@ -343,46 +370,50 @@
 				<div class="form">
 					<form action="">
 						<div class="group col-2 first">
-							<div>
-								하나은행
-							</div>
+							<div>하나은행</div>
 							<div>
 								<span>예금주 : </span> 이승갑
 							</div>
 						</div>
 						<div class="group">
 							<div>
-								<input name="BBankNum1" id="BBankNum1" class="input" readonly value="306-910675-39007"><button type="button" class="btn" onclick="jsCopyLink('30691067539007', 'accountCopyG')">복사</button>
+								<input name="BBankNum1" id="BBankNum1" class="input" readonly
+									value="306-910675-39007">
+								<button type="button" class="btn"
+									onclick="jsCopyLink('30691067539007', 'accountCopyG')">복사</button>
 							</div>
-						</div>			
+						</div>
 					</form>
 				</div>
 			</div>
-			<button href="javascript:void(0);" class="close-btn" onclick="popClose('accountCopyB')">닫기</button>
+			<button href="javascript:void(0);" class="close-btn"
+				onclick="popClose('accountCopyB')">닫기</button>
 		</div>
 	</div>
 
 	<div class="pop-wrap copyComplete" id="copyComplete">
-		<div class="pop-inner">			
+		<div class="pop-inner">
 			<div class="pop-body">
 				<div class="form">
-				<form action="">
-					<div class="con">
-						<div class="group">
-							<div>
-								<div class="tit">계좌번호가 복사되었습니다.</div>
-								<div class="bkinfo">
-									<span>하나은행 306-910675-39007</span><br><span>예금주 이승갑</span>
-								</div>								
+					<form action="">
+						<div class="con">
+							<div class="group">
+								<div>
+									<div class="tit">계좌번호가 복사되었습니다.</div>
+									<div class="bkinfo">
+										<span>하나은행 306-910675-39007</span><br>
+										<span>예금주 이승갑</span>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="buttons">	
-						<a href="javascript:void(0);" class="btn" onclick="popClose('copyComplete')">확인</a>						
-					</div>
-				</form>
+						<div class="buttons">
+							<a href="javascript:void(0);" class="btn"
+								onclick="popClose('copyComplete')">확인</a>
+						</div>
+					</form>
 				</div>
-			</div>			
+			</div>
 		</div>
 	</div>
 
