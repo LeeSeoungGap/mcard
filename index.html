@@ -453,7 +453,7 @@
 				var bank = $(this).bank;
 				var bankNum = $(this).bankNum;
 				var copyText = bankNum.replace(/-/gi, "");
-				jsCopyLink(copyText, openId, bank + "  " bankNum, "예금주  "+ nm);
+				jsCopyLink(copyText, openId, bank + "  " + bankNum, "예금주  "+ nm);
 			}, this);
 		});
 
@@ -471,7 +471,6 @@
 
 			document.execCommand('copy');
 			document.body.removeChild(tmpTextarea);
-			popClose(id);
 			popOpen('0 1rem', 'copyComplete');
 			//alert("URL 복사가 완료되었습니다."); 					  
 		}
