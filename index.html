@@ -443,10 +443,10 @@
 		popGallery();
 		$( ".account-section .accountCopy .group button" ).click(function() {
 			console.log($(this));
-			var openId = $(this).openid;
-			var nm = $(this).nm;
-			var bank = $(this).bank;
-			var bankNum = $(this).bankNum;
+			var openId = $(this).attr("openid");
+			var nm = $(this).attr("nm");
+			var bank = $(this).attr("bank");
+			var bankNum = $(this).attr("bankNum");
 			var copyText = bankNum.replace(/-/gi, "");
 			jsCopyLink(copyText, openId, bank + "  " + bankNum, "예금주  "+ nm);
 		});
@@ -454,7 +454,7 @@
 		function jsCopyLink(copyText, id, copyBank, copyNm) {
 			var tmpTextarea = document.createElement('textarea');
 			tmpTextarea.value = copyText;
-			$("#"+id+" .input")
+			//$("#"+id+" .input")
 			$(".bkinfo #copyBank").text(copyBank);
 			$(".bkinfo #copyNm").text(copyNm);
 			
