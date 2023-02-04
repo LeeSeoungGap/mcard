@@ -1121,6 +1121,6 @@ body{background:url("/mcard/mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 
 
 /* DeskTop */
 @media all and (min-width:720px) {
-	html{font-size:32px !important;}
+	html{font-size:32px !important; padding-top: 9rem;}
 	html, body{max-width:720px; margin:0 auto;}
 }
