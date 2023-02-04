@@ -305,7 +305,31 @@
 											<input name="BBankNum1" id="BBankNum1" class="input"
 												readonly="" :value="bankNum">
 											<button type="button" class="btn"
-												@click="jsCopyLink($event.target.getAttribute('bankNumrepl'), 'accountCopyG')">복사</button>
+												@click="jsCopyLink($event.target.getAttribute('bankNumrepl'), 'accountCopyB')">복사</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<button href="javascript:void(0);" class="close-btn"
+							onclick="popClose('accountCopyB')">닫기</button>
+					</div>
+				</div>
+				<div class="accountCopy" id="accountCopyG" style="display: black">
+					<div class="pop-inner">
+						<div class="pop-body">
+							<div class="form">
+								<form action="">
+									<div class="group col-2 first">
+										<div x-text="wBank"></div>
+										<div x-html="'<span>예금주 : </span>'+wNm"></div>
+									</div>
+									<div class="group">
+										<div>
+											<input name="BBankNum2" id="BBankNum2" class="input"
+												readonly="" :value="wBankNum">
+											<button type="button" class="btn"
+												@click="jsCopyLink($event.target.getAttribute('wBankNumrepl'), 'accountCopyG')">복사</button>
 										</div>
 									</div>
 								</form>
