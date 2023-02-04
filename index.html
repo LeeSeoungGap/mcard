@@ -54,15 +54,14 @@
 						<p class="date" x-text="date"></p>
 					</div>
 					<div class="vertical-item photo">
-						<img :src="mainPhoto"> 
+						<img :src="mainPhoto">
 					</div>
 					<div class="vertical-item info">
 						<p class="p1">
-							<span class="vs-span" x-text="mNm"></span> <span class="vs-span bar"></span>
-							<span class="vs-span" x-text="wNm"></span>
+							<span class="vs-span" x-text="mNm"></span> <span
+								class="vs-span bar"></span> <span class="vs-span" x-text="wNm"></span>
 						</p>
-						<p class="p2" x-html="tnp+place">
-						</p>
+						<p class="p2" x-html="tnp+place"></p>
 					</div>
 				</div>
 			</section>
@@ -77,8 +76,8 @@
 						<div class="tb">
 							<div class="row">
 								<p class="honju">
-									<span class="gt-span" x-text="mHm"></span> <span class="gt-span bul"></span>
-									<span class="gt-span" x-text="mHw"></span>
+									<span class="gt-span" x-text="mHm"></span> <span
+										class="gt-span bul"></span> <span class="gt-span" x-text="mHw"></span>
 								</p>
 								<p class="default">의</p>
 								<p class="gwangye" x-text="mGw"></p>
@@ -86,8 +85,8 @@
 							</div>
 							<div class="row">
 								<p class="honju">
-									<span class="gt-span" x-text="wHm"></span> <span class="gt-span bul"></span>
-									<span class="gt-span" x-text="wHw"></span>
+									<span class="gt-span" x-text="wHm"></span> <span
+										class="gt-span bul"></span> <span class="gt-span" x-text="wHw"></span>
 								</p>
 								<p class="default">의</p>
 								<p class="gwangye" x-text="wGw"></p>
@@ -223,10 +222,10 @@
 				<div class="sec-tit">오시는길</div>
 				<div class="map-area">
 					<div class="head">
-						<div class="tit">대보름 카페 앤 그라운드</div>
+						<div class="tit" x-text="place"></div>
 						<div class="txt">
-							<p>부산 기장군 기장읍 기장해안로 98 오시리아스퀘어 D101호 (우)46084 지번기장읍 시랑리 725</p>
-							<p>Tel. 1670-8515</p>
+							<p x-text="address"></p>
+							<p x-tel="tel"></p>
 						</div>
 					</div>
 					<div id="map_canvas" class="map">
@@ -256,7 +255,7 @@
 					<div class="contain">
 						<dl>
 							<dt>주차안내</dt>
-							<dd>대보름 카페 앤 그라운드 주차장 이용</dd>
+							<dd x-text="parking"></dd>
 						</dl>
 					</div>
 				</div>
@@ -264,11 +263,10 @@
 					<div class="contain">
 						<dl>
 							<dt>계좌번호안내</dt>
-							<dd>농협 123-456788-7654321 예금주 : 손선자</dd>
+							<dd x-text="mHAcc"></dd>
+							<dd x-text="wHAcc"></dd>
 						</dl>
-						<dl>
-							<dt>기타안내</dt>
-							<dd>화환은 정중히 사양합니다.</dd>
+						<dl x-text="etc">
 						</dl>
 					</div>
 				</div>
@@ -298,27 +296,27 @@
 						src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
 						integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx"
 						crossorigin="anonymous"></script> <script>
-						  Kakao.init('3c3b3335ddafa438dcb91710a37ab17f'); // 사용하려는 앱의 JavaScript 키 입력
+							Kakao.init('3c3b3335ddafa438dcb91710a37ab17f'); // 사용하려는 앱의 JavaScript 키 입력
 						</script> <a id="kakaotalk-sharing-btn" href="javascript:;"> <img
 						src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
 						alt="카카오톡 공유 보내기 버튼" />
 				</a> <script>
-						  Kakao.Share.createDefaultButton({
-						    container: '#kakaotalk-sharing-btn',
-						    objectType: 'feed',
-						    content: {
-						      title: '이승갑,김유경 청첩장',
-						      description: '#결혼 #청첩장 #대보름 카페 앤 그라운드',
-						      imageUrl:
-						        '',
-						      link: {
-						        // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
-						        mobileWebUrl: 'https://leeseounggap.github.io/mcard/',
-						        webUrl: 'https://leeseounggap.github.io/mcard/',
-						      },
-						    },
-						  });
-						</script></li>
+					Kakao.Share
+							.createDefaultButton({
+								container : '#kakaotalk-sharing-btn',
+								objectType : 'feed',
+								content : {
+									title : '이승갑,김유경 청첩장',
+									description : '#결혼 #청첩장 #대보름 카페 앤 그라운드',
+									imageUrl : '',
+									link : {
+										// [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+										mobileWebUrl : 'https://leeseounggap.github.io/mcard/',
+										webUrl : 'https://leeseounggap.github.io/mcard/',
+									},
+								},
+							});
+				</script></li>
 			</ul>
 		</div>
 		<div class="foot-logo">
@@ -400,8 +398,8 @@
 								<div>
 									<div class="tit">계좌번호가 복사되었습니다.</div>
 									<div class="bkinfo">
-										<span>하나은행 306-910675-39007</span><br>
-										<span>예금주 이승갑</span>
+										<span>하나은행 306-910675-39007</span><br> <span>예금주
+											이승갑</span>
 									</div>
 								</div>
 							</div>
@@ -417,39 +415,39 @@
 	</div>
 
 	<script>
-		function music_player(){   
-			if ($('#m_off').text()=='stop'){
+		function music_player() {
+			if ($('#m_off').text() == 'stop') {
 				bgmStart('/music/bgm1.mp3');
 				$('#m_off').text('start');
-				document.getElementById('m_on').src="/mcard/mobile/new_m/mcard/images/common/music_01_on.png" 
-			}else{
+				document.getElementById('m_on').src = "/mcard/mobile/new_m/mcard/images/common/music_01_on.png"
+			} else {
 				bgmStop();
 				$('#m_off').text('stop')
-				document.getElementById('m_on').src="/mcard/mobile/new_m/mcard/images/common/music_01_off.png" 
+				document.getElementById('m_on').src = "/mcard/mobile/new_m/mcard/images/common/music_01_off.png"
 			}
 		}
 
-		function bgmStart(link){
-			if ( window.HTMLAudioElement ) {			
-				audio = $('audio');		
-				audio[0].src = link;			
+		function bgmStart(link) {
+			if (window.HTMLAudioElement) {
+				audio = $('audio');
+				audio[0].src = link;
 				audio[0].load();
 				audio[0].play();
 				//alert("audio");
-			}else{							
+			} else {
 				//ie_player.setBGM(link);
 				//alert(ie_player.src);
-				setTimeout("ie_player.bgmPlay()", 100);	
+				setTimeout("ie_player.bgmPlay()", 100);
 				//alert("ifrm");
 			}
 		}
 
-		function bgmStop(){
-			if ( window.HTMLAudioElement ) {
-				audio = $('audio');			
-				audio[0].pause();		
-			}else{
-				ie_player.bgmStop();			
+		function bgmStop() {
+			if (window.HTMLAudioElement) {
+				audio = $('audio');
+				audio[0].pause();
+			} else {
+				ie_player.bgmStop();
 			}
 		}
 
@@ -468,18 +466,18 @@
 		// 다음 지도
 		// daumMap(37.546303, 127.048160);
 
-		function jsCopyLink(copyText, id) {            
+		function jsCopyLink(copyText, id) {
 			var tmpTextarea = document.createElement('textarea');
 			tmpTextarea.value = copyText;
-		 
+
 			document.body.appendChild(tmpTextarea);
 			tmpTextarea.select();
-			tmpTextarea.setSelectionRange(0, 9999);  // 셀렉트 범위 설정
-		 
+			tmpTextarea.setSelectionRange(0, 9999); // 셀렉트 범위 설정
+
 			document.execCommand('copy');
 			document.body.removeChild(tmpTextarea);
 			popClose(id);
-			popOpen('0 1rem','copyComplete');			
+			popOpen('0 1rem', 'copyComplete');
 			//alert("URL 복사가 완료되었습니다."); 					  
 		}
 	</script>

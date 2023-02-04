@@ -12,7 +12,14 @@ document.addEventListener('alpine:init', () => {
         wGw: "차녀",
         //요일시간&장소
         tnp: "토요일 오후 12시 30분<br>",
+        //식장 이름
         place: "대보름 Cafe & Ground",
+        //식장 주소
+        address: "부산 기장군 기장읍 기장해안로 98 오시리아스퀘어 D101호 (우)46084 지번기장읍 시랑리 725",
+        //식장 전화번호
+        tel: "Tel. 1670-8515",
+        //주차안내
+        parking: "대보름 카페 앤 그라운드 주차장 이용",
         //메인사진(첫화면)
         mainPhoto: "/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg",
         //인사말 제목
@@ -36,6 +43,12 @@ document.addEventListener('alpine:init', () => {
         vtext: '예쁘게<span class="space">잘</span>살겠습니다',
         //달력 요일, 시간
         calendar: 'sat.</span> <span class="time">pm 12:30',
+        //남자혼주 계좌
+        mHAcc: "농협 123-456788-7654321 예금주 : 손선자",
+        //여자혼주 계좌
+        wHAcc: "",
+        //기타 할말
+        etc: "<dt>기타안내</dt><dd>화환은 정중히 사양합니다.</dd>"
         
 
 
