@@ -444,6 +444,7 @@
 		
 		$(document).ready(function(){
 			$(".account-section .accountCopy .group button").on("click", function(){
+				console.log($(this));
 				var openId = $(this).openid;
 				var nm = $(this).nm;
 				var bank = $(this).bank;
