@@ -13,7 +13,7 @@ body{background:url("/mcard/mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 
 
 /* popup */
 .pop-wrap{display:none; z-index:1003; position:fixed; left:0; top:50%; width:100%; box-sizing:border-box;}
-.pop-inner{position:relative; box-shadow:0 8px 8px rgba(0, 0, 0, .2);}
+.pop-inner{position:relative;}
 .pop-head{position:relative; background:#fff;}
 .pop-body{position:relative; background:#fff; padding:1.875rem 0;}
 
@@ -112,7 +112,7 @@ body{background:url("/mcard/mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 
 	padding:3.125rem 0;
 }
 .greeting-section .sec-txt{
-	margin-bottom:2.813rem;
+	margin-bottom:0;
 	font-size:0.813rem;
 	font-weight:300;
 	line-height:1.5rem;
