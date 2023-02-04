@@ -11,7 +11,8 @@ document.addEventListener('alpine:init', () => {
         //신부 집안 관계
         wGw: "차녀",
         //요일시간&장소
-        tnp: "토요일 오후 12시 30분<br> 대보름 Cafe & Ground",
+        tnp: "토요일 오후 12시 30분<br>",
+        place: "대보름 Cafe & Ground",
         //메인사진(첫화면)
         mainPhoto: "/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg",
         //인사말 제목
@@ -31,7 +32,8 @@ document.addEventListener('alpine:init', () => {
 
         //배너 텍스트
         btext: "소 중 한 &nbsp; 당 신 을 &nbsp; 초 대 합 니 다",
-
+        //세로 배너 텍스트
+        vtext: '예쁘게<span class="space">잘</span>살겠습니다',
         //달력 요일, 시간
         calendar: 'sat.</span> <span class="time">pm 12:30',
         
