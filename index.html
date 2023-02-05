@@ -268,7 +268,7 @@
 				</div>
 				<div class="info">
 					<div class="contain">
-						<dl>
+						<dl x-show="(mHAcc+wHAcc).length > 0 ? true : false)">
 							<dt>계좌번호안내</dt>
 							<dd x-text="mHAcc"></dd>
 							<dd x-text="wHAcc"></dd>
