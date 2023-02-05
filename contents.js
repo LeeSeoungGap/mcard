@@ -85,11 +85,14 @@ document.addEventListener('alpine:init', () => {
 					<li style="list-style: decimal-leading-zero;">당일 단독 예식으로, 오랜만에 만난 가족분들과 여유있는 시간을 보내시길 소망합니다.</li>
 					<li style="list-style: decimal-leading-zero;">식사 종료 후, 식장에 장식된 꽃을 포장해드릴 예정입니다.<br>작은 꽃다발과 함께 저희 결혼식이 좋은 기억으로 추억되기를 바랍니다.</li>
 				</ol>`,
-        pt: `<dt>버스 </dt>
+        pt: `<dl>
+        	<dt>버스 </dt>
 			<dd>공수.당사마을 정류장 하차, 도보 3분 거리</dd>
             <dd>100번, 181번, 185번, 해운대구 마을버스 9번</dd>
-            <br>
+            </dl>
+            <dl>
             <dt>지하철 </dt>
-			<dd>동해선 송정역 하차, 도보 25분 거리</dd>`,
+			<dd>동해선 송정역 하차, 도보 25분 거리</dd>
+			</dl>`,
     }));
 });
