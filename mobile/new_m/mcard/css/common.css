@@ -1018,7 +1018,7 @@ body{background:url("/mcard/mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 
 .foot-share a{
 	position:relative;
 	display:block;
-	padding-top:3.563rem;
+	/*padding-top:3.563rem;*/
 	font-family:"Noto Sans KR";
 	font-size:0.688rem;
 	font-weight:300;
