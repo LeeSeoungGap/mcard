@@ -58,8 +58,10 @@ document.addEventListener('alpine:init', () => {
         귀한 마음, 소중히 간직하겠습니다.`,
         //달력 요일, 시간
         calendar: 'sat.</span> <span class="time">pm 12:30',
+        //혼주계좌 보여줄지 여부
+        isAcc: false,
         //남자혼주 계좌
-        mHAcc: "농협 123-456788-7654321 예금주 : 손선자",
+        mHAcc: "",
         //여자혼주 계좌
         wHAcc: "",
         //기타 할말
