@@ -1049,6 +1049,8 @@ body{background:url("/mcard/mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 
 	background-image:url("/mcard/mobile/new_m/mcard/images/common/footer_2g.png");
 }
 .foot-logo{
+	color: white;
+    font-size: 0.7rem;
 	display:-webkit-box; 
 	display:-ms-flexbox; 
 	display:flex;
@@ -1059,18 +1061,7 @@ body{background:url("/mcard/mobile/new_m/mcard/images/common/bg_white.jpg") 0 0 
 	-ms-flex-direction: column;
 	flex-direction: column;
 	background:#333;
-	font-size:0;
-	line-height:0;
 	text-align:center;
-}
-.foot-logo:after{
-	content:'';
-	display:block;
-	width:3.469rem;
-	height:0.906rem;
-	margin:0 auto;
-	background:url("/mcard/mobile/new_m/mcard/images/common/footer_logo.png") 0 0 no-repeat;
-	background-size:3.469rem auto;
 }
 
 /* ******************************** ¹Ìµð¾î Äõ¸® ******************************** */
