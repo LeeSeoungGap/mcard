@@ -8,7 +8,7 @@ document.addEventListener('alpine:init', () => {
         mTel: "tel:01097909994",
         mSms: "sms:01097909994",
         //신랑 집안 관계
-        mGw: "장남",
+        mGw: "아들",
         //신부이름
         wNm: "김유경",
         wTel: "tel:01077400430",
@@ -59,9 +59,9 @@ document.addEventListener('alpine:init', () => {
         //달력 요일, 시간
         calendar: 'sat.</span> <span class="time">pm 12:30',
         //혼주계좌 보여줄지 여부
-        isAcc: false,
+        isAcc: true,
         //남자혼주 계좌
-        mHAcc: "",
+        mHAcc: "손선자 부산은행 294-12-005059-9",
         //여자혼주 계좌
         wHAcc: "",
         //기타 할말
