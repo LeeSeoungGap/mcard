@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>이승갑 ♡ 김유경의 모바일 청첩장</title>
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,target-densitydpi=medium-dpi" />
+<meta name="format-detection" content="telephone=no" />
+<meta property="og:type" content="website">
+<meta property="og:image" content="">
+<!-- Link Image -->
+<meta property="og:title" content="모바일청첩장">
+<!-- Link Title -->
+<meta property="og:description" content="">
+<!-- Link Text -->
+<meta property="og:url" content="">
+<!-- Link URL -->
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/earlyaccess/kopubbatang.css" />
+<!-- font-family: 'KoPub Batang'; -->
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/earlyaccess/nanummyeongjo.css" />
+<!-- font-family: 'Nanum Myeongjo'; -->
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/earlyaccess/notosanskr.css" />
+<!-- font-family: 'Noto Sans KR'; -->
+<link rel="stylesheet" type="text/css"
+	href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<!-- font-family: 'Nanum Gothic'; -->
+<link rel="stylesheet" type="text/css"
+	href="/mcard/mobile/new_m/mcard/css/lightSlider.css" />
+<link rel="stylesheet" type="text/css"
+	href="/mcard/mobile/new_m/mcard/css/style.css?v=0.0.3" />
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/jquery-ui.min.js"></script>
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/lightSlider.js"></script>
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/jquery.rwdImageMaps.min.js"></script>
+<script type="text/javascript"
+	src="/mcard/mobile/new_m/mcard/js/common.js"></script>
+</head>
+<body class="mcard_29" x-data="data">
+	<script src="/mcard/alpine.js" defer></script>
+	<script type="text/javascript" src="/mcard/contents.js" charset="UTF-8"></script>
+	<div class="wrapper">
+		<section id="content">
+			<!--// 비주얼 -->
+			<section class="visual-section" style="height: auto;">
+				<div class="vertical-center">
+					<div class="vertical-item date">
+						<p class="date" x-text="date"></p>
+					</div>
+					<div class="vertical-item photo">
+						<img :src="mainPhoto">
+					</div>
+					<div class="vertical-item info">
+						<p class="p1">
+							<span class="vs-span" x-text="mNm"></span> 
+							<span class="vs-span bar"></span> 
+							<span class="vs-span" x-text="wNm"></span>
+						</p>
+						<p class="p2" x-html="tnp+place"></p>
+					</div>
+					<div class="vertical-item info">
+						<span class="" x-html="vtext" style="font-family: 'Nanum Myeongjo', 'Nanum Gothic', sans-serif, 'helvetica', serif, 'AppleGothic';text-align: center;font-size: 0.813rem;border-top: 1px solid #bbb;padding-top: 30px;color: black;width: 100%;"></span>
+					</div>
+				</div>
+			</section>
+			<!-- 비주얼 //-->
+			<section class="gallery-section" style="padding:0px">
+				<div class="sec-tit" x-text="gTitle"></div>
+				<div class="contain" style="display:none">
+					<ul id="image-gallery"
+						class="gallery list-unstyled cS-hidden roll_type02">
+						<li
+							data-thumb="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1"
+							onclick="galleryPOP('open', 'type2');">
+							<div class="box">
+								<div class="pos">
+									<div class="cen">
+										<img
+											src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" />
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- <li
+							data-thumb="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1"
+							onclick="galleryPOP('open', 'type1');">
+							<div class="box">
+								<div class="pos">
+									<div class="cen">
+										<img
+											src="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" />
+									</div>
+								</div>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+			</section>
+			<!--// 인사말 -->
+			<section class="greeting-section">
+				<div class="sec-txt" x-html="gTxt"></div>
+				<div class="info">
+					<div class="ib">
+						<div class="tb">
+							<div class="row">
+								<p class="honju">
+									<span class="gt-span" x-text="mHm"></span> <span
+										class="gt-span bul"></span> <span class="gt-span" x-text="mHw"></span>
+								</p>
+								<p class="default">의</p>
+								<p class="gwangye" x-text="mGw"></p>
+								<p class="slsb" x-text="mNm"></p>
+							</div>
+							<div class="row">
+								<p class="honju">
+									<span class="gt-span" x-text="wHm"></span> <span
+										class="gt-span bul"></span> <span class="gt-span" x-text="wHw"></span>
+								</p>
+								<p class="default">의</p>
+								<p class="gwangye" x-text="wGw"></p>
+								<p class="slsb" x-text="wNm"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!--// 배너 -->
+			<section class="banner-section">
+				<div class="tb">
+					<p class="txt" x-html="btext"></p>
+				</div>
+			</section>
+			<!-- 배너 //-->
+
+			<!--// 신랑 신부에게 연락하기 -->
+			<section class="slsbTel-section">
+				<div class="ib">
+					<div class="row">
+						<div class="slsb-tit">신랑에게 연락하기</div>
+						<div class="slsb-btn">
+							<a :href="mTel" class="com-btn tel sl">연락하기</a> <a :href="mSms"
+								" class="com-btn sms">문자보내기</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="slsb-tit">신부에게 연락하기</div>
+						<div class="slsb-btn">
+							<a :href="wTel" class="com-btn tel sl">연락하기</a> <a :href="wSms"
+								class="com-btn sms">문자보내기</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 신랑 신부에게 연락하기 //-->
+
+			<!--// 혼주에게 연락하기 -->
+			<section class="honjuTel-section">
+				<div class="tit">혼주에게 연락하기</div>
+				<div class="con">
+					<div class="col">
+						<div class="honju-tit sl">신랑 측 혼주</div>
+						<div class="box first">
+							<div class="name">
+								<span x-text="mHmGw"></span> <strong x-text="mHm"></strong>
+							</div>
+							<div class="name">
+								<span x-text="mHwGw"></span> <strong x-text="mHw"></strong>
+							</div>
+							<div class="honju-btn">
+								<a :href="mHTel" class="com-btn tel sl">연락하기</a> <a
+									:href="mHSms" class="com-btn sms">문자보내기</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="honju-tit sb">신부 측 혼주</div>
+						<div class="box first">
+							<div class="name">
+								<span x-text="wHmGw"></span> <strong x-text="wHm"></strong>
+							</div>
+							<div class="name">
+								<span x-text="wHwGw"></span> <strong x-text="wHw"></strong>
+							</div>
+							<div class="honju-btn">
+								<a :href="wHTel" class="com-btn tel sl">연락하기</a> <a
+									:href="wHSms" class="com-btn sms">문자보내기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 혼주에게 연락하기 //-->
+
+			<!--// 달력 -->
+			<section class="calendar-section">
+				<div class="calendar-wrap">
+					<div id="calendar"></div>
+					<div class="day-time">
+						<span class="day" x-html="calendar"></span>
+					</div>
+				</div>
+			</section>
+			<!-- 달력 //-->
+			
+			<!-- 텍스트 배너 //-->
+			<!-- <section class="location-section">
+				<div class="sec-tit" style="margin-bottom:0">알려드립니다</div>
+				<div class="map-area">
+					<div class="info" style="padding:0;">
+						<div class="contain">
+							<dl style="padding:0; border:0">
+								<dd style="text-align: center;">저희 결혼식에 참석해 주시는 가족 여러분들이<br>더욱 뜻깊고 편안한 시간을 보내실 수 있도록<br>아래내용을 안내해 드립니다.</dd>
+								<dd x-html="alram">
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+			</section>  -->
+
+			<!--// 오시는길 -->
+			<section class="location-section">
+				<div class="sec-tit">오시는길</div>
+				<div class="map-area">
+					<div class="head">
+						<div class="tit" x-text="place"></div>
+						<div class="txt">
+							<p x-text="address"></p>
+							<p x-tel="tel"></p>
+						</div>
+					</div>
+					<div id="map_canvas" class="map">
+						<div
+							style="font: normal normal 400 12px/normal dotum, sans-serif; width: 100%; height: 100%; color: #333; position: relative">
+							<div style="height: 100%;">
+								<a :href="kakaoMap" target="_blank"> <img class="map"
+									:src="kakaoMapImg" width="100%" height="100%">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="link">
+						<ul>
+							<li><a :href="naverMap" class="navermap" target="_blank">네이버지도</a></li>
+							<li><a :href="kakaoMap" class="kakaomap" target="_blank">카카오맵</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info">
+					<div class="contain" x-html="pt">
+					</div>
+				</div>
+				<div class="info">
+					<div class="contain">
+						<dl>
+							<dt>주차안내</dt>
+							<dd x-text="parking"></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="info">
+					<div class="contain">
+						<dl x-show="isAcc">
+							<dt>계좌번호안내</dt>
+							<dd x-text="mHAcc"></dd>
+							<dd x-text="wHAcc"></dd>
+						</dl>
+						<dl x-html="etc">
+						</dl>
+					</div>
+				</div>
+			</section>
+			<!-- 오시는길 //-->
+
+			<!-- 축의금 계좌번호-->
+			<section class="account-section">
+				<div class="sec-tit">신랑신부에게 마음 전하기</div>
+				<div class="sec-txt">축하의 마음을 담아 축의금을 전달해보세요.</div>
+				<div class="accountCopy" id="accountCopyB" style="display: black">
+					<div class="pop-inner">
+						<div class="pop-body">
+							<div class="form">
+								<form action="">
+									<div class="group col-2 first">
+										<div x-text="bank"></div>
+										<div x-html="'<span>예금주 : </span>'+mNm"></div>
+									</div>
+									<div class="group">
+										<div>
+											<input name="BBankNum1" id="BBankNum1" class="input"
+												readonly="" :value="bankNum">
+											<button type="button" class="btn" openid="accountCopyB" :nm="'예금주  '+ mNm" :bank="bank" :bankNum="bankNum">복사</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<button href="javascript:void(0);" class="close-btn"
+							onclick="popClose('accountCopyB')">닫기</button>
+					</div>
+				</div>
+				<div class="accountCopy" id="accountCopyG" style="display: black">
+					<div class="pop-inner">
+						<div class="pop-body">
+							<div class="form">
+								<form action="">
+									<div class="group col-2 first">
+										<div x-text="wBank"></div>
+										<div x-html="'<span>예금주 : </span>'+wNm"></div>
+									</div>
+									<div class="group">
+										<div>
+											<input name="BBankNum2" id="BBankNum2" class="input"
+												readonly="" :value="wBankNum">
+											<button type="button" class="btn" openid="accountCopyG" :nm="'예금주  '+wNm" :bank="wBank" :bankNum="wBankNum">복사</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<button href="javascript:void(0);" class="close-btn"
+							onclick="popClose('accountCopyB')">닫기</button>
+					</div>
+				</div>
+			</section>
+	</div>
+
+	<!--// 푸터 -->
+	<!-- <footer id="footer">
+		<div class="foot-share">
+			<ul class="foot-share-list">
+				<li><script
+						src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+						integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx"
+						crossorigin="anonymous"></script> <script>
+							Kakao.init('3c3b3335ddafa438dcb91710a37ab17f'); // 사용하려는 앱의 JavaScript 키 입력
+						</script> <a id="kakaotalk-sharing-btn" href="javascript:;"> <img
+						src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+						alt="카카오톡 공유 보내기 버튼" />
+				</a> <script>
+					
+				Kakao.Share.createCustomButton({
+				  container: '#kakaotalk-sharing-btn',
+				  templateId: 89565,
+				  templateArgs: {},
+				});
+				</script></li>
+			</ul>
+		</div>
+		<div class="foot-logo">
+			카카오톡 공유하기
+		</div>
+	</footer> -->
+	<!-- 푸터 //-->
+	</div>
+
+	<div class="gallery-pop-wrap">
+		<div class="pop-header">
+			<div class="tit">갤러리</div>
+		</div>
+		<div class="pop-body">
+			<ul id="pop-gallery"
+				class="gallery list-unstyled cS-hidden roll_type02">
+				<li
+					data-thumb="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1">
+					<div class="box">
+						<div class="pos">
+							<div class="cen">
+								<img
+									src="/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg?v=0.0.1" />
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- <li
+					data-thumb="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1">
+					<div class="box">
+						<div class="pos">
+							<div class="cen">
+								<img
+									src="/mcard/mobile/new_m/mcard/images/common/gallery_sample_01.jpg?v=0.0.1" />
+							</div>
+						</div>
+					</div>
+				</li>  -->
+			</ul>
+		</div>
+		<button href="#" class="close-btn"
+			onclick="galleryPOP('close', 'type1')">닫기</button>
+	</div>
+
+	<div class="pop-wrap copyComplete" id="copyComplete">
+		<div class="pop-inner">
+			<div class="pop-body">
+				<div class="form">
+					<form action="">
+						<div class="con">
+							<div class="group">
+								<div>
+									<div class="tit">계좌번호가 복사되었습니다.</div>
+									<div class="bkinfo">
+										<span id="copyBank"></span><br> 
+										<span id="copyNm"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="buttons">
+							<a href="javascript:void(0);" class="btn"
+								onclick="popClose('copyComplete')">확인</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// 포토갤러리
+		imageGallery();
+
+		// 팝업갤러리
+		popGallery();
+		$( ".account-section .accountCopy .group button" ).click(function() {
+			console.log($(this));
+			var openId = $(this).attr("openid");
+			var nm = $(this).attr("nm");
+			var bank = $(this).attr("bank");
+			var bankNum = $(this).attr("bankNum");
+			var copyText = bankNum.replace(/-/gi, "");
+			jsCopyLink(copyText, openId, bank + "  " + bankNum, "예금주  "+ nm);
+		});
+		
+		function jsCopyLink(copyText, id, copyBank, copyNm) {
+			var tmpTextarea = document.createElement('textarea');
+			tmpTextarea.value = copyText;
+			//$("#"+id+" .input")
+			$(".bkinfo #copyBank").text(copyBank);
+			$(".bkinfo #copyNm").text(copyNm);
+			
+
+			document.body.appendChild(tmpTextarea);
+			tmpTextarea.select();
+			tmpTextarea.setSelectionRange(0, 9999); // 셀렉트 범위 설정
+
+			document.execCommand('copy');
+			document.body.removeChild(tmpTextarea);
+			popOpen('0 1rem', 'copyComplete');
+			//alert("URL 복사가 완료되었습니다."); 					  
+		}
+	</script>
+</body>
+</html>
