@@ -26,7 +26,7 @@ document.addEventListener('alpine:init', () => {
         //주차안내
         parking: "대보름 카페 앤 그라운드 주차장 이용",
         //메인사진(첫화면)
-        mainPhoto: "/mcard/mobile/new_m/mcard/images/mcard_29/visual_02.jpg",
+        mainPhoto: "/mcard/mobile/new_m/mcard/images/mcard_29/visual_01.jpg",
         //인사말 제목
         gTitle: "저희, 결혼합니다",
         //인사말 내용
