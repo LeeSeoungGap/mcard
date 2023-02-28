@@ -226,7 +226,58 @@
 
 			</section>  -->
 
-			
+			<!--// 오시는길 -->
+			<section class="location-section">
+				<div class="sec-tit">오시는길</div>
+				<div class="map-area">
+					<div class="head">
+						<div class="tit" x-text="place"></div>
+						<div class="txt">
+							<p x-text="address"></p>
+							<p x-tel="tel"></p>
+						</div>
+					</div>
+					<div id="map_canvas" class="map">
+						<div
+							style="font: normal normal 400 12px/normal dotum, sans-serif; width: 100%; height: 100%; color: #333; position: relative">
+							<div style="height: 100%;">
+								<a :href="kakaoMap" target="_blank"> <img class="map"
+									:src="kakaoMapImg" width="100%" height="100%">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="link">
+						<ul>
+							<li><a :href="naverMap" class="navermap" target="_blank">네이버지도</a></li>
+							<li><a :href="kakaoMap" class="kakaomap" target="_blank">카카오맵</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info">
+					<div class="contain" x-html="pt">
+					</div>
+				</div>
+				<div class="info">
+					<div class="contain">
+						<dl>
+							<dt>주차안내</dt>
+							<dd x-text="parking"></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="info">
+					<div class="contain">
+						<dl x-show="isAcc">
+							<dt>계좌번호안내</dt>
+							<dd x-text="mHAcc"></dd>
+							<dd x-text="wHAcc"></dd>
+						</dl>
+						<dl x-html="etc">
+						</dl>
+					</div>
+				</div>
+			</section>
 			<!-- 오시는길 //-->
 	</div>
 
