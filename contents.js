@@ -65,7 +65,7 @@ document.addEventListener('alpine:init', () => {
         //여자혼주 계좌
         wHAcc: "",
         //기타 할말
-        etc: "<dt>기타안내</dt><dd>화환은 정중히 사양합니다.</dd>",
+        etc: "",//"<dt>기타안내</dt><dd>화환은 정중히 사양합니다.</dd>",
         
         kakaoMap: "https://kko.to/1KKWaoD2O2",
         kakaoMapImg: "http://t1.daumcdn.net/roughmap/imgmap/7a0d58e5f7f9b608f5b809a22e4a59964807603372ad3881cad2a34a12407b4c",
