@@ -11,8 +11,8 @@ document.addEventListener('alpine:init', () => {
         mGw: "아들",
         //신부이름
         wNm: "김유경",
-        wTel: "tel:01077400430",
-        wSms: "sms:01077400430",
+        wTel: "tel:-",
+        wSms: "sms:-",
         //신부 집안 관계
         wGw: "차녀",
         //요일시간&장소
@@ -61,7 +61,7 @@ document.addEventListener('alpine:init', () => {
         //혼주계좌 보여줄지 여부
         isAcc: true,
         //남자혼주 계좌
-        mHAcc: "손선자 부산은행 294-12-005059-9",
+        mHAcc: "이승갑 카카오뱅크 3333-01-8134785",
         //여자혼주 계좌
         wHAcc: "",
         //기타 할말
